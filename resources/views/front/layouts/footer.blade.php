@@ -1,159 +1,138 @@
-@php
-    $legals = App\Models\LegalText::orderBy('priority', 'asc')->orderBy('created_at', 'asc')->get();
-    $faq = App\Models\FAQ::first();
-
-    $categories = App\Models\Category::where('parent_id', 0)->orWhere('parent_id', NULL)->get(['name', 'slug']);
-@endphp
-
-<section class="bg-light pt-5 pb-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="promo-services-item d-flex align-items-center mb-40">
-                    <div class="icon me-3"><img src="{{ asset('themes/werkn-backbone/img/icon/promo_icon01.png') }}" alt="" width="50"></div>
-                    <div class="content pe-5">
-                        <h6 class="mb-2">Entrega a Domicilio</h6>
-                        <p class="mb-0">Te lo enviamos y lo recibes.</p>
+<div class="section grey wf-section">
+    <div class="grid-wrapper">
+        <div id="w-node-_3b314a32-881d-0f24-fb27-38bb23725289-130983d2" class="footer-wrapper">
+            <div id="w-node-b3bfbd67-73c8-a40c-2042-d4cf328b2203-130983d2"
+                class="verticle-line extra-dark hide-on-mobile"></div>
+            <div id="w-node-_1acbf4fd-2363-166f-f79d-8cf873f05ee2-130983d2"
+                class="verticle-line extra-dark hide-on-mobile"></div>
+            <div id="w-node-_33d098a1-5528-8621-8092-c774b55ed008-130983d2" class="footer-left">
+                <div class="stacked-description large">
+                    <div class="brand large dark">
+                        <div>Kind<span class="thin-span">ness</span></div>
                     </div>
+                    <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                        lorem lacus, feugiat a odio nec, feugiat suscipit ipsum. Quisque maximus, justo vitae
+                        facilisis aliquam, nibh ante molestie turpis.</div>
+                </div>
+                <div id="w-node-_0a9254d9-1c51-592d-370c-8692c35b8253-130983d2" class="lesson-icon-wrapper">
+                    <a data-w-id="0a9254d9-1c51-592d-370c-8692c35b8263" href="https://twitter.com/Tycreated"
+                        target="_blank" class="tool-tip w-inline-block">
+                        <div class="solid-video-button-outline extra-dark"><img src="images/twitter.svg" loading="lazy"
+                                alt="" class="icon-image">
+                            <div class="slider-arrow-wrapper"></div>
+                            <div class="video-button-outline extra-small">
+                                <div id="w-node-_0a9254d9-1c51-592d-370c-8692c35b8268-130983d2"
+                                    class="video-outline-wrapper top">
+                                    <div class="video-outline extra-small extra-dark"></div>
+                                </div>
+                                <div id="w-node-_0a9254d9-1c51-592d-370c-8692c35b826a-130983d2"
+                                    class="video-outline-wrapper bottom">
+                                    <div class="video-outline bottom extra-small extra-dark"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-w-id="a6955fed-8828-635b-2fb6-c8562d1e152a" href="https://www.instagram.com/tycreated/"
+                        target="_blank" class="tool-tip w-inline-block">
+                        <div class="solid-video-button-outline extra-dark"><img src="images/instagram-logo.svg"
+                                loading="lazy" alt="" class="icon-image">
+                            <div class="slider-arrow-wrapper"></div>
+                            <div class="video-button-outline extra-small">
+                                <div id="w-node-a6955fed-8828-635b-2fb6-c8562d1e152f-130983d2"
+                                    class="video-outline-wrapper top">
+                                    <div class="video-outline extra-small extra-dark"></div>
+                                </div>
+                                <div id="w-node-a6955fed-8828-635b-2fb6-c8562d1e1531-130983d2"
+                                    class="video-outline-wrapper bottom">
+                                    <div class="video-outline bottom extra-small extra-dark"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-w-id="7b14c4d3-ec51-53da-d60a-8a30997f4077" href="https://twitter.com/Tycreated"
+                        target="_blank" class="tool-tip w-inline-block">
+                        <div class="solid-video-button-outline extra-dark"><img src="images/iosyoutube-play-button.svg"
+                                loading="lazy" alt="" class="icon-image">
+                            <div class="slider-arrow-wrapper"></div>
+                            <div class="video-button-outline extra-small">
+                                <div id="w-node-_7b14c4d3-ec51-53da-d60a-8a30997f407c-130983d2"
+                                    class="video-outline-wrapper top">
+                                    <div class="video-outline extra-small extra-dark"></div>
+                                </div>
+                                <div id="w-node-_7b14c4d3-ec51-53da-d60a-8a30997f407e-130983d2"
+                                    class="video-outline-wrapper bottom">
+                                    <div class="video-outline bottom extra-small extra-dark"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="promo-services-item d-flex align-items-center mb-40">
-                    <div class="icon me-3"><img src="{{ asset('themes/werkn-backbone/img/icon/promo_icon02.png') }}" alt="" width="50"></div>
-                    <div class="content pe-5">
-                        <h6 class="mb-2">Devoluciones</h6>
-                        <p class="mb-0">Cambia y regresa varias veces</p>
-                    </div>
+            <div class="stacked-intro">
+                <div class="subtitle large">Browse</div>
+                <div id="w-node-_50e2a46f-5201-3825-251a-957aa0496640-130983d2" class="footer-list">
+                    <a href="templates.html" class="footer-list-item w-inline-block">
+                        <div>Templates</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
+                    <a href="academy/courses.html" class="footer-list-item w-inline-block">
+                        <div>Academy</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
+                    <a href="newsletter-designs/recent.html" class="footer-list-item w-inline-block">
+                        <div>Newsletter</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
+                    <a href="support/engine.html" class="footer-list-item w-inline-block">
+                        <div>Support engine</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="promo-services-item d-flex align-items-center mb-40">
-                    <div class="icon me-3"><img src="{{ asset('themes/werkn-backbone/img/icon/promo_icon03.png') }}" alt="" width="50"></div>
-                    <div class="content pe-5">
-                        <h6 class="mb-2">Garantía de satisfacción</h6>
-                        <p class="mb-0">Si no te gusta te regresamos tu dinero.</p>
-                    </div>
+            <div class="stacked-intro">
+                <div class="subtitle large">Company</div>
+                <div id="w-node-_4fd79b1b-32cf-17a2-8994-ca3816d638ae-130983d2" class="footer-list">
+                    <a href="about.html" class="footer-list-item w-inline-block">
+                        <div>About</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
+                    <a href="faq.html" class="footer-list-item w-inline-block">
+                        <div>FAQ</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
+                    <a href="diversity-and-inclusion.html" class="footer-list-item w-inline-block">
+                        <div>Diversity &amp; Inclusion</div>
+                        <div class="hover-line">
+                            <div class="hover-line-fill"></div>
+                        </div>
+                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
+                                alt="" class="invert-small"></div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="promo-services-item d-flex align-items-center mb-40">
-                    <div class="icon me-3"><img src="{{ asset('themes/werkn-backbone/img/icon/promo_icon04.png') }}" alt="" width="50"></div>
-                    <div class="content pe-5">
-                        <h6 class="mb-2">Atención al cliente</h6>
-                        <p class="mb-0">Te atendemos siempre contentos</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-dark text-white pt-5 pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <a href="{{ route('index') }}">
-                    @if(!empty($store_config))
-                        @if($store_config->store_logo == NULL)
-                        <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" class="img-fluid mb-5" width="300">
-                        @else
-                        <img src="{{ asset('assets/img/' . $store_config->store_logo) }}" alt="Logo" class="img-fluid mb-5" width="300">
-                        @endif
-                    @else
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" class="img-fluid mb-5" width="300">
-                    @endif
-                </a>   
-            </div>
-
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-4">
-
-                    </div>
-
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <li class="mb-3"><strong>Tienda</strong></li>
-                            <li><a href="{{ route('index') }}">Inicio</a></li>
-                            <li><a href="{{ route('catalog.all') }}">Catálogo</a></li>
-                            @foreach($categories as $category)
-                                <li>
-                                    <a href="{{ route('catalog', $category->slug) }}">{{ $category->name }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4">
-                        <ul class="list-unstyled">
-                            <li class="mb-3"><strong>Soporte y Ayuda</strong></li>
-                            @foreach($legals as $legal)
-                            <li>
-                                <a href="{{ route('legal.text' , $legal->type) }}">
-                                    {{ $legal->title }}
-                                </a>
-                            </li>
-                            @endforeach
-                            
-                            @if(!empty($faq))
-                            <li><a  href="{{ route('faqs.text') }}">Preguntas Frecuentes</a></li>
-                            @endif
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row list-unstyled reassurance-list text-center mt-5">
-            @if(!empty($card_payment))
-            <div class="col mt-4">
-                <img src="{{ asset('img/icons/card-info.png') }}" style="height: 35px; width: auto !important;">
-                <p class="mb-0 mt-3">Aceptamos Todas las Tarjetas de Crédito</p>
-            </div>
-            @endif
-
-            <div class="col mt-4 trust-logo">
-                <script type="text/javascript"> //<![CDATA[
-                  var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
-                  document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
-                //]]></script>
-                <script language="JavaScript" type="text/javascript">
-                  TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_md_167x42.png", "POSDV", "none");
-                </script>
-
-                <p class="mb-0 mt-3">Sitio Seguro con Encriptación de 256-Bits</p>
-            </div>
-
-            @if(!empty($paypal_payment))
-            <div class="col mt-4">
-                <img src="{{ asset('assets/img/brands/paypal.png') }}" style="height: 35px; width: auto !important;">
-                <p class="mb-0 mt-3">Aceptamos pagos por medio de Paypal</p>
-            </div>
-            @endif
-
-            @if(!empty($mercado_payment))
-            <div class="col mt-4">
-                <img src="{{ asset('assets/img/brands/mercado-pago.png') }}" style="height: 35px; margin-bottom: 5px; width: auto !important;">
-                <p>Aceptamos pagos por medio de MercadoPago</p>
-            </div>
-            @endif
-
-            @if(!empty($cash_payment))
-            <div class="col mt-4">
-                <img src="{{ asset('assets/img/brands/oxxopay.png') }}" style="padding-top: 5px; height: 35px; width: auto !important;">
-                <p class="mb-0 mt-3">Aceptamos pagos en efectivo en Oxxo</p>
-            </div>
-            @endif
-        </div>
-    </div>
-</footer>
-
-<!-- Footer -->
-<div class="post-footer bg-light pt-3 pb-3">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p class="text-uppercase mb-0" style="font-size: .8em">&copy; {{ Carbon\Carbon::now()->format('Y') }} <a href="index.html">{{ $store_config->store_name ?? 'LagerHaus powered by Werkn WeCommerce' }}</a>. Todos los derechos reservados</p>
             </div>
         </div>
     </div>
