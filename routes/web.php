@@ -1,7 +1,7 @@
 <?php
 
 
-Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']], function(){
+Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']], function () {
     //Dashboard
     Route::get('/', 'DashboardController@index')->name('dashboard');
     // Settings
@@ -36,8 +36,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
         'as' => 'popups.status',
     ]);
 
-     Route::resource('band', HeaderbandController::class);
-       Route::post('/band/status/{id}', [
+    Route::resource('band', HeaderbandController::class);
+    Route::post('/band/status/{id}', [
         'uses' => 'HeaderbandController@status',
         'as' => 'band.status',
     ]);
@@ -45,12 +45,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     //Configuration
     Route::get('/configuration', 'DashboardController@configuration')->name('configuration'); //
 
-    Route::get('/bienvenido/paso-1',[
+    Route::get('/bienvenido/paso-1', [
         'uses' => 'DashboardController@configStep1',
         'as' => 'config.step1',
     ]);
 
-    Route::get('/bienvenido/paso-2/{id}',[
+    Route::get('/bienvenido/paso-2/{id}', [
         'uses' => 'DashboardController@configStep2',
         'as' => 'config.step2',
     ]);
@@ -209,7 +209,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
 
     Route::resource('user-rules', UserRuleController::class);
 
-    Route::get('/user-rules/change-status/{id}',[
+    Route::get('/user-rules/change-status/{id}', [
         'uses' => 'UserRuleController@changeStatus',
         'as' => 'user-rules.status',
     ]);
@@ -284,7 +284,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     Route::resource('coupons', CouponController::class); //
     Route::resource('reviews', ReviewController::class)->except(['store']); //
 
-    Route::get('/reviews/aprobar/{id}',[
+    Route::get('/reviews/aprobar/{id}', [
         'uses' => 'ReviewController@approve',
         'as' => 'review.approve',
     ]);
@@ -303,7 +303,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     Route::resource('faq', FAQController::class);
     Route::resource('taxes', StoreTaxController::class)->except(['create']); //
 
-    Route::get('/taxes/create/{country_id}',[
+    Route::get('/taxes/create/{country_id}', [
         'uses' => 'StoreTaxController@create',
         'as' => 'taxes.create',
     ]);
@@ -316,18 +316,18 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     Route::resource('mail', MailController::class)->except(['show, create, index']);
     Route::resource('notifications', NotificationController::class)->except(['show']); //
 
-    Route::get('/notifications/all',[
+    Route::get('/notifications/all', [
         'uses' => 'NotificationController@all',
         'as' => 'notifications.all',
     ]);
 
-    Route::get('/notifications/all/mark-as-read',[
+    Route::get('/notifications/all/mark-as-read', [
         'uses' => 'NotificationController@markAsRead',
         'as' => 'notifications.mark.read',
     ]);
 
     Route::resource('payments', PaymentMethodController::class);
-    Route::get('/payments/change-status/{id}',[
+    Route::get('/payments/change-status/{id}', [
         'uses' => 'PaymentMethodController@changeStatus',
         'as' => 'payments.status',
     ]);
@@ -335,7 +335,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     Route::resource('shipments-rules', ShipmentMethodRuleController::class);
     Route::resource('shipping-options', ShipmentOptionsController::class);
 
-    Route::get('/shipments-rule/change-status/{id}',[
+    Route::get('/shipments-rule/change-status/{id}', [
         'uses' => 'ShipmentMethodRuleController@changeStatus',
         'as' => 'shipments-rules.status',
     ]);
@@ -346,13 +346,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     Route::resource('cities', CityController::class);
     Route::resource('config', StoreConfigController::class);
 
-    Route::post('config-api-token',[
+    Route::post('config-api-token', [
         'uses' => 'StoreConfigController@apiToken',
         'as' => 'api.token.store',
     ]);
 
     Route::resource('integrations', IntegrationController::class);
-    Route::get('general-preferences',[
+    Route::get('general-preferences', [
         'uses' => 'IntegrationController@index',
         'as' => 'general.config',
     ]);
@@ -363,7 +363,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
         'as' => 'themes.status',
     ]);
 
-    Route::post('store-logo',[
+    Route::post('store-logo', [
         'uses' => 'IntegrationController@storeLogo',
         'as' => 'store.logo',
     ]);
@@ -387,12 +387,16 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
         'uses' => 'DashboardController@generalSearch',
         'as' => 'back.search.query',
     ]);
-
 });
 
 Route::get('/', [
     'uses' => 'FrontController@index',
     'as' => 'index',
+]);
+
+Route::get('sobre_nosotros', [
+    'uses' => 'FrontController@about',
+    'as' => 'about',
 ]);
 
 Route::get('catalog', 'FrontController@catalogAll')->name('catalog.all');
@@ -416,7 +420,7 @@ Route::get('/busqueda-general', [
 
 
 //Profile
-Route::group(['prefix' => 'profile', 'middleware' => ['web', 'can:customer_access']], function(){
+Route::group(['prefix' => 'profile', 'middleware' => ['web', 'can:customer_access']], function () {
     Route::get('/', 'FrontController@profile')->name('profile');
     Route::get('wishlist', 'FrontController@wishlist')->name('wishlist');
     Route::get('orders', 'FrontController@shopping')->name('shopping');
@@ -451,12 +455,12 @@ Route::group(['prefix' => 'profile', 'middleware' => ['web', 'can:customer_acces
         'as' => 'address.destroy',
     ]);
 
-    Route::get('/user/change-image',[
+    Route::get('/user/change-image', [
         'uses' => 'FrontController@editImage',
         'as' => 'profile.image',
     ]);
 
-    Route::put('/user/change-image/{id}',[
+    Route::put('/user/change-image/{id}', [
         'uses' => 'FrontController@updateImage',
         'as' => 'profile.image.update',
     ]);

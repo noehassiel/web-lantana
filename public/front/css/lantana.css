@@ -974,7 +974,7 @@ p {
   max-height: 600px;
   min-width: 300px;
   margin-bottom: 0px;
-  background-image: url('../images/Rythm-comp-two.jpg');
+  background-image: url('../img/Rythm-comp-two.jpg');
   background-position: 50% 0%;
   background-size: 105%;
   background-repeat: no-repeat;
@@ -1010,51 +1010,51 @@ p {
 }
 
 .looping-screen.one {
-  background-image: url('../images/Portrait24.jpeg');
+  background-image: url('../img/Portrait24.jpeg');
 }
 
 .looping-screen.two {
-  background-image: url('../images/Portrait003.jpg');
+  background-image: url('../img/Portrait003.jpg');
 }
 
 .looping-screen.three {
-  background-image: url('../images/Portrait012.jpeg');
+  background-image: url('../img/Portrait012.jpeg');
 }
 
 .looping-screen.four {
-  background-image: url('../images/Portrait21.jpeg');
+  background-image: url('../img/Portrait21.jpeg');
 }
 
 .looping-screen.five {
-  background-image: url('../images/Portrait019.jpeg');
+  background-image: url('../img/Portrait019.jpeg');
 }
 
 .looping-screen.six {
-  background-image: url('../images/Portrait0018.jpeg');
+  background-image: url('../img/Portrait0018.jpeg');
 }
 
 .looping-screen.seven {
-  background-image: url('../images/Portrait010.jpeg');
+  background-image: url('../img/Portrait010.jpeg');
 }
 
 .looping-screen.eight {
-  background-image: url('../images/Portrait23.jpeg');
+  background-image: url('../img/Portrait23.jpeg');
 }
 
 .looping-screen.nine {
-  background-image: url('../images/Portrait007.jpeg');
+  background-image: url('../img/Portrait007.jpeg');
 }
 
 .looping-screen.ten {
-  background-image: url('../images/Portrait006.jpg');
+  background-image: url('../img/Portrait006.jpg');
 }
 
 .looping-screen.eleven {
-  background-image: url('../images/Portrait001.jpg');
+  background-image: url('../img/Portrait001.jpg');
 }
 
 .looping-screen.twelve {
-  background-image: url('../images/Portrait016.jpeg');
+  background-image: url('../img/Portrait016.jpeg');
 }
 
 .testimonial-strip-wrapper {
@@ -1220,22 +1220,22 @@ p {
   right: 0%;
   bottom: 0%;
   z-index: 2;
-  background-image: url('../images/001.jpeg');
+  background-image: url('../img/001.jpeg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .background.one {
-  background-image: url('../images/Image23.jpeg');
+  background-image: url('../img/Image23.jpeg');
 }
 
 .background.two {
-  background-image: url('../images/Image26.jpeg');
+  background-image: url('../img/Image26.jpeg');
 }
 
 .background.three {
-  background-image: url('../images/Image27.jpeg');
+  background-image: url('../img/Image27.jpeg');
 }
 
 .arrow {
@@ -1299,19 +1299,19 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  background-image: url('../images/Portrait019.jpeg');
+  background-image: url('../img/Portrait019.jpeg');
   background-position: 50% 40%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .avatar.avatar-003 {
-  background-image: url('../images/Portrait003.jpg');
+  background-image: url('../img/Portrait003.jpg');
   background-position: 50% 30%;
 }
 
 .avatar.avatar-002 {
-  background-image: url('../images/Portrait21.jpeg');
+  background-image: url('../img/Portrait21.jpeg');
   background-position: 50% 10%;
 }
 
@@ -5668,7 +5668,7 @@ p {
   width: 62px;
   border-radius: 2px;
   background-color: #000;
-  background-image: url('../images/send48x481x.svg');
+  background-image: url('../img/send48x481x.svg');
   background-position: 50% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -8162,18 +8162,18 @@ p {
   width: 100%;
   height: 100%;
   max-width: 125vw;
-  background-image: url('../images/Image24.jpeg');
+  background-image: url('../img/Image24.jpeg');
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero-slide-background.two {
-  background-image: url('../images/017.jpeg');
+  background-image: url('../img/017.jpeg');
 }
 
 .hero-slide-background.three {
-  background-image: url('../images/016.jpeg');
+  background-image: url('../img/016.jpeg');
 }
 
 .product-slider-arrow {
@@ -8443,7 +8443,7 @@ p {
   right: 0%;
   bottom: 0%;
   overflow: hidden;
-  background-image: url('../images/033.jpeg');
+  background-image: url('../img/033.jpeg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30634,4 +30634,3 @@ p {
     justify-self: start;
   }
 }
-

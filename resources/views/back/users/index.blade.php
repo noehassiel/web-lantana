@@ -28,7 +28,7 @@
             <div class="card mg-b-10">
 
                 <div class="table-responsive">
-                    <table class="table table-dashboard">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">(#) Id</th>
@@ -58,8 +58,8 @@
                                 <td>
                                     {{ $user->getRoleNames() }}
                                 </td>
-                                <td><span class="text-muted"><i class="far fa-clock"></i>{{ Carbon\Carbon::parse($user->created_at)->translatedFormat('d M Y - h:ia') }}</span></td>
-                                <td><span class="text-muted"><i class="far fa-clock"></i>{{ Carbon\Carbon::parse($user->updated_at)->translatedFormat('d M Y - h:ia') }}</span></td>
+                                <td>{{ $user->created_at }}</td>
+                                <td>{{ $user->updated_at }}</td>
 
                                 @if($users->count() > 1)
                                     <td>
@@ -112,7 +112,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="password">Contraseña <span class="tx-danger">*</span></label>
-                                                            <input type="password" id="txtNewPassword" name="password" class="form-control" required="">
+                                                            <input type="text" id="txtNewPassword" name="password" class="form-control" required="">
                                                         </div>
                                                     </div>
 

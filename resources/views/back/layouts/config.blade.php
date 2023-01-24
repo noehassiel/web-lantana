@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -31,7 +32,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
 
-    <title>Werkn Commerce - Vista Principal</title>
+    <title>Vista Principal</title>
 
     <!-- vendor css -->
     <link href="{{ asset('lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
@@ -43,18 +44,21 @@
     <link rel="stylesheet" href="{{ asset('assets/css/dashforge.dashboard.css') }}">
     @yield('stylesheets')
 </head>
+
 <body>
 
-<header class="navbar navbar-header">
-      <a href="" id="sidebarMenuOpen" class="burger-menu"><i data-feather="arrow-left"></i></a>
-      <div class="navbar-brand">
-        <a href="{{ route('index') }}" class="df-logo">We<span></span>rkn</a>
-      </div><!-- navbar-brand -->
+    <header class="navbar navbar-header">
+        <a href="" id="sidebarMenuOpen" class="burger-menu"><i data-feather="arrow-left"></i></a>
+        <div class="navbar-brand">
+            <a href="{{ route('index') }}" class="df-logo">We<span></span>rkn</a>
+        </div><!-- navbar-brand -->
 
-      <div class="navbar-right">
-        <a href="{{ route('support.help') }}" class="btn btn-outline-secondary"><i class="far fa-life-ring"></i> <span>Ayuda</span></a>
-        <a href="{{ route('index') }}" class="btn btn-outline-danger"><i class="fas fa-sign-out-alt ml-3"></i> <span>Salir</span></a>
-      </div><!-- navbar-right -->
+        <div class="navbar-right">
+            <a href="{{ route('support.help') }}" class="btn btn-outline-secondary"><i class="far fa-life-ring"></i>
+                <span>Ayuda</span></a>
+            <a href="{{ route('index') }}" class="btn btn-outline-danger"><i class="fas fa-sign-out-alt ml-3"></i>
+                <span>Salir</span></a>
+        </div><!-- navbar-right -->
     </header><!-- navbar -->
 
     <div class="content content-components">
@@ -67,7 +71,7 @@
                         @include('wecommerce::back.layouts.partials._messages')
                     </div>
                 </div>
-                
+
                 <!-- Content -->
                 @yield('content')
             </div>
@@ -78,10 +82,11 @@
     <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('lib/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-   
+
     <script src="{{ asset('assets/js/dashforge.js') }}"></script>
     <script src="{{ asset('assets/js/dashforge.aside.js') }}"></script>
 
     @yield('scripts')
 </body>
+
 </html>

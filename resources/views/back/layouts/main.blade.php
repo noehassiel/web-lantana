@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Twitter -->
-    <meta name="twitter:site" content="@nowyouwerkn">
-    <meta name="twitter:creator" content="@nowyouwerkn">
+    <meta name="twitter:site" content="@noehassiel">
+    <meta name="twitter:creator" content="@noehassiel">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Werken">
-    <meta name="twitter:description" content="Werken WeCommerce">
+    <meta name="twitter:title" content="noehassiel">
+    <meta name="twitter:description" content="noehassiel">
     <meta name="twitter:image" content="">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.werken.mx">
-    <meta property="og:title" content="Werken">
-    <meta property="og:description" content="Werken WeCommerce">
+    <meta property="og:url" content="noehassiel.com">
+    <meta property="og:title" content="Noehassiel">
+    <meta property="og:description" content="Noehassiel">
 
     <meta property="og:image" content="">
     <meta property="og:image:secure_url" content="">
@@ -25,86 +26,101 @@
     <meta property="og:image:height" content="600">
 
     <!-- Meta -->
-    <meta name="description" content="Werken WeCommerce">
-    <meta name="author" content="Werken">
+    <meta name="description" content="Noehassiel">
+    <meta name="author" content="Noehassiel">
 
     <!-- Favicon -->
-    <title>Werkn Commerce - Vista Principal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+
+    <title>Vista Principal</title>
 
     <!-- vendor css -->
     <link href="{{ asset('lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/jqvmap/jqvmap.min.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/dashforge.css') }}">
-    @if(Auth::user()->color_mode == true)
-    <link rel="stylesheet" href="{{ asset('assets/css/skin.dark.css') }}">
+    @if (Auth::user()->color_mode == true)
+        <link rel="stylesheet" href="{{ asset('assets/css/skin.dark.css') }}">
     @endif
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('assets/css/corporate-ui-dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nhbase.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('assets/css/dashforge.dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/wk.custom.css') }}">
 
     @stack('stylesheets')
 </head>
-<body class="g-sidenav-show  bg-gray-100">
+
+<body>
     @include('back.layouts.navbar')
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <div class="content ht-100v pd-0">
         @include('back.layouts.header')
-        <div class="container-fluid py-4 px-5">
-          @yield('content')
-          @include('back.layouts.footer')
+
+        <div class="content-body">
+            <div class="container pd-x-0">
+                @yield('title')
+                @include('back.layouts.partials._messages')
+
+                @yield('content')
+            </div>
         </div>
-    </main>
-    {{-- 
-    @include('back.layouts.settings')
-    --}}
+    </div>
 
-    <script src="{{ asset('assets/js/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('assets/js/smooth-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('assets/js/chartjs.min.js') }}"></script>
+    <div id="modalSaleChannels" class="modal fade">
+        <div class="modal-dialog modal-dialog-vertical-center" role="document">
+            <div class="modal-content bd-0 tx-14">
+                <div class="modal-header">
+                    <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Agregar Nuevo Canal de Venta</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pd-25">
+                    <div class="media align-items-center mb-5">
+                        <img src="{{ asset('assets/img/brands/amazon.jpg') }}" class="wd-100 rounded mg-r-20"
+                            alt="">
+                        <div class="media-body">
+                            <span class="badge badge-warning">PRÓXIMAMENTE</span>
+                            <h5 class="mg-b-15 tx-inverse">Amazon</h5>
+                            Uno de las empresas más grandes de venta por internet. Conecta tu catálogo por medio de la
+                            API para aprovechar sus beneficios.
+                        </div>
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <!-- choose one -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                    <div class="media align-items-center mb-5">
+                        <img src="{{ asset('assets/img/brands/mercadolibre.png') }}" class="wd-100 rounded mg-r-20"
+                            alt="">
+                        <div class="media-body">
+                            <span class="badge badge-warning">PRÓXIMAMENTE</span>
+                            <h5 class="mg-b-15 tx-inverse">MercadoLibre</h5>
+                            El portal latinoamericano de ventas. Conecta tu catálogo por medio de la API para aprovechar
+                            sus beneficios.
+                        </div>
+                    </div>
 
-    <script>
-        if (document.getElementsByClassName('mySwiper')) {
-            var swiper = new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
-                initialSlide: 1,
-                navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-                },
-            });
-        };
+                    <div class="card-footer">
+                        <div class="d-block pt-4">
+                            <h5>¿No encuentras a tu proveedor?</h5>
+                            <p>Nosotros podemos ayudarte a integrar la API.</p>
+                        </div>
 
-        var win = navigator.platform.indexOf('Win') > -1;
-        if (win && document.querySelector('#sidenav-scrollbar')) {
-            var options = {
-            damping: '0.5'
-            }
-            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-        }
-    </script>
-    <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- Control Center for Corporate UI Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="{{ asset('assets/js/corporate-ui-dashboard.min.js?v=1.0.0') }}"></script>
+                        <a href="javascript:void()" class="btn btn-outline-secondary disabled btn-block">Solicita una
+                            integración</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
 
-    <script>
-        feather.replace()
-    </script>
+    <script src="{{ asset('lib/feather-icons/feather.min.js') }}"></script>
+
+    <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dashforge.js') }}"></script>
+    <script src="{{ asset('assets/js/dashforge.aside.js') }}"></script>
+
+
     @stack('scripts')
 </body>
+
 </html>

@@ -1,12 +1,4 @@
-@extends('back.layouts.main')
-
-@section('title')
-    <ol class="breadcrumb bg-transparent mb-1 pb-0 pt-1 px-0 me-sm-6 me-5">
-        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Dashboard</a></li>
-        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
-    </ol>
-    <h6 class="font-weight-bold mb-0">Dashboard</h6>
-@endsection
+@extends('wecommerce::back.layouts.main')
 
 @section('title')
     <div class="d-sm-flex align-items-center justify-content-between mg-lg-b-30">
@@ -65,7 +57,7 @@
 
                             <div class="form-group mt-2">
                                 <label>Imágen <span class="text-info">(Opcional)</span></label>
-                                <input type="file" class="form-control" id="image" name="image" accept=".jpg, .jpeg, .png" />
+                                <input type="file" class="form-control" id="image" name="image" />
                             </div>
                         </div>
                     </div>
@@ -89,7 +81,7 @@
             @endif
 
             <div class="card-body pb-0">
-                <h5 class="card-title display-4 mb-1">{{ $category->name }}</h5>
+                <h5 class="card-title display-4 mb-1">{{ $category->name }}</h5> 
                 @if($category->parent_id == NULL || 0)
                 <p class="card-text">Productos en esta categoría: <span class="badge badge-info">{{ $category->products->count() }}</span></p>
                 @endif
@@ -100,10 +92,10 @@
 
             <div class="card-body">
                 <p class="card-text mb-0">
-                    <small class="text-muted">Creado: {{ Carbon\Carbon::parse($category->created_at)->translatedFormat('d M Y - h:ia') }}</small>
+                    <small class="text-muted">Creado: {{ $category->created_at }}</small>
                 </p>
                 <p class="card-text mb-0">
-                    <small class="text-muted">Actualizado: {{ Carbon\Carbon::parse($category->updated_at)->translatedFormat('d M Y - h:ia') }}</small>
+                    <small class="text-muted">Actualizado: {{ $category->updated_at }}</small>
                 </p>
             </div>
         </div>
@@ -140,7 +132,7 @@
                                 <td style="width: 150px; position: relative;">
                                     <img style="width: 100%;" src="{{ asset('img/products/' . $product->image ) }}" alt="{{ $product->name }}">
                                     <div class="text-center margin-top-10">
-                                        <small><p>+ {{ $product->images->count() }} Imágen(es)</p></small>
+                                        <small><p>+ {{ $product->images->count() }} Imágen(es)</p></small>    
                                     </div>
                                 </td>
                                 <td style="width: 250px;">
@@ -158,7 +150,7 @@
                                 </td>
                                 <!--
                                 <td class="sizes-td">
-
+                                    
                                 </td>
                                 -->
                                 <td>
@@ -206,7 +198,7 @@
                                     @endif
                                 </td>
                                 <td class="text-nowrap">
-                                    {{--
+                                    {{-- 
                                     <a href="{{ route('products.show', $product->id) }}" class="btn btn-outline-primary btn-sm btn-icon" data-toggle="tooltip" data-original-title="Ver Detalle">
                                         <i class="fas fa-eye"></i>
                                     </a>
@@ -234,7 +226,7 @@
                                 <td style="width: 150px; position: relative;">
                                     <img style="width: 100%;" src="{{ asset('img/products/' . $product->image ) }}" alt="{{ $product->name }}">
                                     <div class="text-center margin-top-10">
-                                        <small><p>+ {{ $product->images->count() }} Imágen(es)</p></small>
+                                        <small><p>+ {{ $product->images->count() }} Imágen(es)</p></small>    
                                     </div>
                                 </td>
                                 <td style="width: 250px;">
@@ -252,7 +244,7 @@
                                 </td>
                                 <!--
                                 <td class="sizes-td">
-
+                                    
                                 </td>
                                 -->
                                 <td>
@@ -300,7 +292,7 @@
                                     @endif
                                 </td>
                                 <td class="text-nowrap">
-                                    {{--
+                                    {{-- 
                                     <a href="{{ route('products.show', $product->id) }}" class="btn btn-outline-primary btn-sm btn-icon" data-toggle="tooltip" data-original-title="Ver Detalle">
                                         <i class="fas fa-eye"></i>
                                     </a>

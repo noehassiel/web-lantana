@@ -1,4 +1,4 @@
-@extends('back.layouts.main')
+@extends('wecommerce::back.layouts.main')
 
 @push('stylesheets')
 <link href="{{ asset('lib/select2/css/select2.min.css') }}" rel="stylesheet">
@@ -50,7 +50,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Productos</li>
                 </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1"><img src="{{ asset('assets/img/physical-product.png') }}" width="35px" class="mr-1" alt=""> Agregar Producto</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Agregar Producto</h4>
         </div>
         <div class="d-none d-md-block">
             <a href="{{ route('products.index') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
@@ -64,9 +64,6 @@
     <!-- Form -->
     <form method="POST" id="save-form" action="{{ route('products.store') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
-
-        {{-- TIPO DE PRODUCTO --}}
-        <input type="hidden" value="physical" name="type">
 
         {{--
         <div class="save-bar bg-success text-white d-flex align-items-center justify-content-between">
@@ -99,7 +96,6 @@
                             <div class="form-group">
                                 <label for="description">Descripción <span class="text-danger">*</span></label>
                                 <textarea name="description" cols="10" rows="3" class="form-control" required="">{{ old('description') }}</textarea>
-                                <small class="text-muted">Debe contener al menos 30 caracteres.</small>
                             </div>
                         </div>
 
@@ -242,7 +238,6 @@
                                 </div>
                             </div>
 
-                            <!--IVA->
                             <div class="col-md-12 mt-3">
                                 <div class="custom-control custom-checkbox">
                                   <input type="checkbox" class="custom-control-input" id="has_tax" name="has_tax" value="1">
@@ -250,7 +245,6 @@
                                   <span class="tx-13 tx-color-03 d-block wd-60p">Seleccionar esta casilla si el valor ingresado en el campo de "Precio" ya incluye I.V.A. De lo contrario, la plataforma agregará el impuesto automáticamente (Para tiendas configuradas en MXN).</span>
                                 </div>
                             </div>
-                            <!--IVA-->
                         </div>
                     </div>
 
@@ -269,7 +263,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="stock">Cantidad <span class="text-danger">*</span></label>
-                                <input type="number" name="stock" class="form-control" value="{{ old('stock') }}" required>
+                                <input type="number" name="stock" class="form-control" value="{{ old('stock') }}" value="1" required>
                             </div>
                         </div>
 
@@ -476,9 +470,12 @@
                     </div>
                 </div>
                 --}}
+            </div>
 
-                <button type="submit" class="btn btn-lg pd-x-15 btn-primary btn-uppercase btn-block">
-                    <i class="fas fa-save mr-1"></i> Guardar Producto
+            <!-- Button -->
+            <div class="col-md-4 offset-md-8 text-center">
+                <button type="submit" class="btn btn-primary btn-block">
+                    Guardar Producto
                 </button>
             </div>
         </div>

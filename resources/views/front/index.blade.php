@@ -1,21 +1,11 @@
 @extends('front.layouts.main')
 
 @section('content')
-    <div class="preloader">
-        <div class="preloader-intro">
-            <div class="preloader-brand">
-                <div>Kind<span class="thin-span">ness</span></div>
-            </div>
-            <div class="preloader-indicator">
-                <div class="preloader-fill"></div>
-            </div>
-        </div>
-    </div>
     <div class="flyout first">
         <div class="grid-wrapper">
             <div data-w-id="1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea26a" class="close-flyout">
-                <div class="close-cursur"><img src="images/Icon_multiply.svg" loading="lazy" alt=""
-                        class="close-icon"></div>
+                <div class="close-cursur"><img src="images/Icon_multiply.svg" loading="lazy" alt="" class="close-icon">
+                </div>
             </div>
             <div id="scrollbar" class="flyout-content w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea26c-efe74afb">
                 <div class="youtube-wrapper">
@@ -205,40 +195,42 @@
                                                         class="subtitle-line left">
                                                         <div class="solid-subtitle-line"></div>
                                                     </div>
-                                                    <div class="subtitle light">Better design</div>
+                                                    <div class="subtitle light">{{ $banner->subtitle }}</div>
                                                     <div id="w-node-_01d82022-36b0-524c-960d-5b28f673679b-efe74afb"
                                                         class="subtitle-line">
                                                         <div class="solid-subtitle-line"></div>
                                                     </div>
                                                 </div>
-                                                <h1 class="xxl-heading">Weekly web design inspiration without all of the
-                                                    fluff.
+                                                <h1 class="xxl-heading">{{ $banner->title }}
                                                 </h1>
-                                                <div class="dual-button">
-                                                    <a href="newsletter-designs/recent.html"
-                                                        class="outline-button light left w-inline-block">
-                                                        <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a1-efe74afb"
-                                                            class="button-text">View Newsletter</div>
-                                                        <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a3-efe74afb"
-                                                            class="button-hover-outline left">
-                                                            <div class="solid-button-outline light"></div>
-                                                        </div>
-                                                        <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a5-efe74afb"
-                                                            class="button-hover-outline right">
-                                                            <div class="solid-button-outline right light"></div>
-                                                        </div>
-                                                        <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a7-efe74afb"
-                                                            class="button-hover-outline middle">
-                                                            <div class="solid-button-outline middle light"></div>
-                                                        </div>
-                                                    </a>
-                                                </div>
+                                                @if ($banner->has_button == 1)
+                                                    <div class="dual-button">
+                                                        <a href="{{ $banner->link }}"
+                                                            class="outline-button light left w-inline-block">
+                                                            <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a1-efe74afb"
+                                                                class="button-text">{{ $banner->text_button }}</div>
+                                                            <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a3-efe74afb"
+                                                                class="button-hover-outline left">
+                                                                <div class="solid-button-outline light"></div>
+                                                            </div>
+                                                            <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a5-efe74afb"
+                                                                class="button-hover-outline right">
+                                                                <div class="solid-button-outline right light"></div>
+                                                            </div>
+                                                            <div id="w-node-_01d82022-36b0-524c-960d-5b28f67367a7-efe74afb"
+                                                                class="button-hover-outline middle">
+                                                                <div class="solid-button-outline middle light"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
                                     <div class="slider-background-wrapper hero-wrapper">
                                         <div class="slider-background">
-                                            <div class="hero-slide-background three">
+                                            <div class="hero-slide-background three"
+                                                style="background-image: url({{ asset('img/banners/' . $banner->image_desktop) }})">
                                                 <div class="overlay gradient"></div>
                                             </div>
                                         </div>
@@ -249,8 +241,9 @@
                     </div>
                     @if ($banners->count() != 0)
                         <div data-w-id="1637b49a-7f68-ec54-42e6-368c2d0c2e07"
-                            class="right-arrow left w-slider-arrow-left"><img src="images/arrow-left24x242x.svg"
-                                loading="lazy" alt="" class="invert-small large">
+                            class="right-arrow left w-slider-arrow-left"><img
+                                src="{{ asset('img/arrow-left24x242x.svg') }}" loading="lazy" alt=""
+                                class="invert-small large">
                             <div class="arrow-outline">
                                 <div class="outline-clip left">
                                     <div class="outline-cut left">
@@ -260,7 +253,7 @@
                             </div>
                         </div>
                         <div data-w-id="1637b49a-7f68-ec54-42e6-368c2d0c2e0d" class="right-arrow w-slider-arrow-right">
-                            <img src="images/arrow-right24x242x.svg" loading="lazy" alt=""
+                            <img src="{{ asset('img/arrow-right24x242x.svg') }}" loading="lazy" alt=""
                                 class="invert-small large">
                             <div class="arrow-outline right">
                                 <div class="outline-clip">
@@ -300,7 +293,7 @@
                     <div class="card-wrapper">
                         <div class="card left-end">
                             <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70cb-efe74afb" class="card-icon-circle">
-                                <img src="images/Icon_copy.svg" loading="lazy" alt="">
+                                <img src="{{ asset('img/Icon_copy.svg') }}" loading="lazy" alt="">
                             </div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
@@ -323,7 +316,7 @@
                         </div>
                         <div data-w-id="495fcc9f-807c-962f-12da-95dde81c306a" class="card top-border---tablet">
                             <div id="w-node-_495fcc9f-807c-962f-12da-95dde81c306b-efe74afb" class="card-icon-circle">
-                                <img src="images/academic-cap.svg" loading="lazy" alt="">
+                                <img src="{{ asset('img/academic-cap.svg') }}" loading="lazy" alt="">
                             </div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
@@ -344,7 +337,7 @@
                         </div>
                         <div class="card top-border---tablet">
                             <div id="w-node-ebbe51c5-14ff-3d79-013b-4761fbab3fd9-efe74afb" class="card-icon-circle">
-                                <img src="images/Icon_mail.svg" loading="lazy" alt="">
+                                <img src="i{{ asset('img/Icon_mail.svg') }}" loading="lazy" alt="">
                             </div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
@@ -1402,8 +1395,8 @@
                                                                 class="template-hover-top">
                                                                 <a data-w-id="47de4d66-b56c-51b5-acb3-009a71bef1e1"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_copyLight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_copyLight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -1414,8 +1407,8 @@
                                                                 </a>
                                                                 <a data-w-id="2c216eed-d6f9-b7ff-a511-4cd9213e87cd"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_viewlight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_viewlight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -1624,8 +1617,8 @@
                                                                 class="template-hover-top">
                                                                 <a data-w-id="ae9c192d-b924-334d-007a-e9dd62fb7aef"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_copyLight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_copyLight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -1636,8 +1629,8 @@
                                                                 </a>
                                                                 <a data-w-id="ae9c192d-b924-334d-007a-e9dd62fb7af6"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_viewlight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_viewlight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -1826,8 +1819,8 @@
                                                                 class="template-hover-top">
                                                                 <a data-w-id="43a84a41-7992-4334-2e69-c00c0fbe8f39"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_copyLight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_copyLight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -1838,8 +1831,8 @@
                                                                 </a>
                                                                 <a data-w-id="43a84a41-7992-4334-2e69-c00c0fbe8f40"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_viewlight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ 'img/Icon_viewlight.svg' }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -2028,8 +2021,8 @@
                                                                 class="template-hover-top">
                                                                 <a data-w-id="820cbc4e-570b-91ad-bcce-2246b3ce1812"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_copyLight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_copyLight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -2040,8 +2033,8 @@
                                                                 </a>
                                                                 <a data-w-id="820cbc4e-570b-91ad-bcce-2246b3ce1819"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_viewlight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_viewlight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -2230,8 +2223,8 @@
                                                                 class="template-hover-top">
                                                                 <a data-w-id="84fae358-94c3-2d2b-e819-c4b9b198e564"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_copyLight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_copyLight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -2242,8 +2235,8 @@
                                                                 </a>
                                                                 <a data-w-id="84fae358-94c3-2d2b-e819-c4b9b198e56b"
                                                                     href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/Icon_viewlight.svg" loading="lazy"
-                                                                        alt="">
+                                                                        src="{{ asset('img/Icon_viewlight.svg') }}"
+                                                                        loading="lazy" alt="">
                                                                     <div class="tool-tip-text bottom">
                                                                         <div class="tooltip-corner bottom"></div>
                                                                         <div class="tooltip-info auto-width">
@@ -2307,8 +2300,9 @@
                             </div>
                             <div class="left-arrow left w-slider-arrow-left">
                                 <div class="solid-video-button-outline extra-dark">
-                                    <div class="slider-arrow-wrapper"><img src="images/arrow-left-final24x242x.svg"
-                                            loading="lazy" alt="" class="invert-small"></div>
+                                    <div class="slider-arrow-wrapper"><img
+                                            src="{{ asset('img/arrow-left-final24x242x.svg') }}" loading="lazy"
+                                            alt="" class="invert-small"></div>
                                     <div class="video-button-outline small">
                                         <div id="w-node-_9e188066-2c68-be1a-5a10-64030e16793a-efe74afb"
                                             class="video-outline-wrapper top">
@@ -2323,8 +2317,9 @@
                             </div>
                             <div class="left-arrow right dark w-slider-arrow-right">
                                 <div class="solid-video-button-outline extra-dark">
-                                    <div class="slider-arrow-wrapper"><img src="images/arrow-right-final24x242x.svg"
-                                            loading="lazy" alt="" class="invert-small"></div>
+                                    <div class="slider-arrow-wrapper"><img
+                                            src="{{ asset('img/arrow-right-final24x242x.svg') }}" loading="lazy"
+                                            alt="" class="invert-small"></div>
                                     <div class="video-button-outline small">
                                         <div id="w-node-c1f49912-b18b-3d17-8076-711a436e8ce9-efe74afb"
                                             class="video-outline-wrapper top">
@@ -2387,8 +2382,8 @@
                     <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e3-f4ebe4e3"
                         data-w-id="795f3e77-169a-6507-2849-968bf4ebe4e3" class="video-button-wrapper">
                         <div data-w-id="795f3e77-169a-6507-2849-968bf4ebe4e4" class="video-button">
-                            <div class="video-button-fill"><img src="images/playbuttonicon24x242x.svg" loading="lazy"
-                                    alt="" class="video-icon"></div>
+                            <div class="video-button-fill"><img src="{{ asset('img/playbuttonicon24x242x.svg') }}"
+                                    loading="lazy" alt="" class="video-icon"></div>
                             <div class="solid-video-button-outline">
                                 <div class="video-button-outline">
                                     <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e9-f4ebe4e3"

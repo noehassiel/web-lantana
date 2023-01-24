@@ -14,4 +14,9 @@ class FrontController extends Controller
         return view('front.index')
             ->with('banners', $banners);
     }
+
+    public function about()
+    {
+        return view('front.about');
+    }
 }
