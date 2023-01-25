@@ -5,8 +5,8 @@
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Textos Legales</li>
+                    <li class="breadcrumb-item"><a href="#">lantana</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Textos Legales</li>
                 </ol>
             </nav>
             <h4 class="mg-b-0 tx-spacing--1">Crear textos Legales</h4>
@@ -41,7 +41,7 @@
                                 <input type="text" name="type_id" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="description">Descripcion</label>

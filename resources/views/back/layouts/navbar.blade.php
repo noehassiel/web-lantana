@@ -85,6 +85,12 @@
                 </ul>
             </li>
 
+            <li class="nav-item with-sub">
+                <a href="{{ route('projects.index') }}" class="nav-link">
+                    <i data-feather="users"></i> <span>Proyectos</span>
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a href="{{ route('clients.index') }}" class="nav-link">
                     <i data-feather="users"></i> <span>Clientes</span>

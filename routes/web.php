@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 
 Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']], function () {
     //Dashboard
@@ -45,167 +46,22 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     //Configuration
     Route::get('/configuration', 'DashboardController@configuration')->name('configuration'); //
 
-    Route::get('/bienvenido/paso-1', [
-        'uses' => 'DashboardController@configStep1',
-        'as' => 'config.step1',
-    ]);
-
-    Route::get('/bienvenido/paso-2/{id}', [
-        'uses' => 'DashboardController@configStep2',
-        'as' => 'config.step2',
-    ]);
-
     //Catalog
-    Route::resource('products', ProductController::class); //
-
-    Route::get('products/create/digital', [
-        'uses' => 'ProductController@createDigital',
-        'as' => 'products.create.digital',
-    ]);
-
-    Route::get('products/create/subscription', [
-        'uses' => 'ProductController@createSubscription',
-        'as' => 'products.create.subscription',
-    ]);
-
-    Route::get('productsquery', [
-        'uses' => 'ProductController@search',
-        'as' => 'products.query',
-    ]);
-    Route::get('productsfilter/{filter}/{order}', [
-        'uses' => 'ProductController@filter',
-        'as' => 'filter.products',
-    ]);
-    Route::get('productspromotions', [
-        'uses' => 'ProductController@promotions',
-        'as' => 'products.promotions',
-    ]);
-    Route::get('exportar-productos', 'ProductController@export')->name('export.products');
-    Route::post('importar-productos', 'ProductController@import')->name('import.products');
-    Route::get('exportar-inventario', 'ProductController@export_inventory_changes')->name('inventory.clients');
-
     Route::post('/get-subcategories', [
         'uses' => 'ProductController@fetchSubcategory',
         'as' => 'dynamic.subcategory',
     ]);
 
+    //Proyectos
+    Route::resource('projects', ProjectController::class);
+
+    //Públicaciones
+    Route::resource('posts', PostController::class);
+
     // Get Functions
-    Route::get('/characteristic-inputs', function () {
-        return view('wecommerce::back.products.includes._characteristic_inputs');
-    })->name('subscription.inputs');
-
-    Route::get('/characteristic-inputs-update', function () {
-        return view('wecommerce::back.products.includes._characteristic_inputs_update');
-    })->name('subscription.inputs.update');
-
-    Route::post('products/new-characteristic', [
-        'uses' => 'ProductController@storeCharacteristic',
-        'as' => 'characteristic.store'
-    ]);
-
-    Route::put('products/update-characteristic/{id}', [
-        'uses' => 'ProductController@updateCharacteristic',
-        'as' => 'characteristic.update'
-    ]);
-
-    Route::delete('products/delete-characteristic/{id}', [
-        'uses' => 'ProductController@destroyCharacteristic',
-        'as' => 'characteristic.destroy'
-    ]);
-
-    Route::post('products/new-image', [
-        'uses' => 'ProductController@storeImage',
-        'as' => 'image.store',
-    ]);
-
-    Route::post('products/update-image', [
-        'uses' => 'ProductController@updateImage',
-        'as' => 'image.update',
-    ]);
-
-    Route::delete('products/delete-image/{id}', [
-        'uses' => 'ProductController@destroyImage',
-        'as' => 'image.destroy',
-    ]);
-
-    Route::post('/products/create-dynamic', [
-        'uses' => 'ProductController@storeDynamic',
-        'as' => 'products.store.dynamic',
-    ]);
-
-    Route::put('/products/update-stock/{id}', [
-        'uses' => 'ProductController@stockUpdate',
-        'as' => 'product.stock.update',
-    ]);
-
-    //Route::resource('product-relationships', ProductRelationshipController::class);
-
-    Route::post('/obtener-color-de-producto', [
-        'uses' => 'ProductRelationshipController@fetchColor',
-        'as' => 'fetch.color',
-    ]);
-
-    Route::post('/product-relationships/{id}', [
-        'uses' => 'ProductRelationshipController@store',
-        'as' => 'relationship.store',
-    ]);
-
-    Route::delete('/product-relationships/{id}', [
-        'uses' => 'ProductRelationshipController@destroy',
-        'as' => 'relationship.destroy',
-    ]);
-
-    Route::resource('stocks', StockController::class); //
-    Route::resource('variants', VariantController::class); //
     Route::resource('categories', CategoryController::class); //
-    Route::resource('size_chart', SizeChartController::class);
-
-    Route::post('size/add', [
-        'uses' => 'SizeChartController@createsize',
-        'as' => 'size.add',
-    ]); //
-    Route::post('size/update', [
-        'uses' => 'SizeChartController@update_value',
-        'as' => 'size_value.update',
-    ]);
-
-    Route::get('stocksquery', [
-        'uses' => 'StockController@search',
-        'as' => 'stocks.query',
-    ]);
-
-    Route::get('stocks/filter/{filter}/{order}', [
-        'uses' => 'StockController@filter',
-        'as' => 'filter.stock',
-    ]);
-
-    Route::post('/variants/stock/{id}', [
-        'uses' => 'StockController@store',
-        'as' => 'stock.store',
-    ]);
-
-    Route::post('/variants/stock-dynamic', [
-        'uses' => 'StockController@storeDynamic',
-        'as' => 'stock.store.dynamic',
-    ]);
-
-    Route::put('/variants/update-stock/{id}', [
-        'uses' => 'StockController@update',
-        'as' => 'stock.update',
-    ]);
-
-    Route::delete('/variants/delete-stock/{id}', [
-        'uses' => 'StockController@destroy',
-        'as' => 'stock.destroy',
-    ]);
 
     Route::resource('clients', ClientController::class);
-    Route::resource('invoices', UserInvoiceController::class);
-
-    Route::get('filter/invoices/{invoice}/{filter}', [
-        'uses' => 'UserInvoiceController@filter',
-        'as' => 'filter.invoices',
-    ]);
 
     Route::resource('user-rules', UserRuleController::class);
 
@@ -214,99 +70,16 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
         'as' => 'user-rules.status',
     ]);
 
-    Route::get('exportar-clientes', 'ClientController@export')->name('export.clients');
-    Route::post('importar-clientes', 'ClientController@import')->name('import.clients');
-    Route::get('filter/clients/{order}/{filter}', [
-        'uses' => 'ClientController@filter',
-        'as' => 'filter.clients',
-    ]);
     Route::get('clientsquery', [
         'uses' => 'ClientController@query',
         'as' => 'clients.search',
     ]);
 
     Route::resource('newsletter', NewsletterController::class); //
-
-    Route::resource('orders', OrderController::class); //
-
-    Route::get('orders-subscriptions', [
-        'uses' => 'OrderController@subscriptions',
-        'as' => 'order.subscriptions.index',
-    ]);
-
-    Route::get('exportar-ordenes', 'OrderController@export')->name('export.orders');
-
-    Route::get('/orders/{id}/packing-list', [
-        'uses' => 'OrderController@packingList',
-        'as' => 'order.packing.list',
-    ]);
-
-    Route::put('/orders/{id}/cambiar-estado', [
-        'uses' => 'OrderController@changeStatus',
-        'as' => 'order.status',
-    ]);
-
-    Route::get('/cambiar-estado-orden/{id}/{status_string}', [
-        'uses' => 'OrderController@changeStatusStatic',
-        'as' => 'order.status.static',
-    ]);
-
-    Route::resource('orders/notes', OrderNoteController::class); //
-
-    Route::resource('/orders/tracking',  OrderTrackingController::class);
-
-    Route::get('/orders/tracking/complete/{id}', [
-        'uses' => 'OrderTrackingController@updateComplete',
-        'as' => 'tracking.complete',
-    ]);
-
-    Route::get('filter/orders/{order}/{filter}', [
-        'uses' => 'OrderController@filter',
-        'as' => 'filter.orders',
-    ]);
-    Route::get('ordersquery', [
-        'uses' => 'OrderController@query',
-        'as' => 'orders.search',
-    ]);
-
-    Route::get('/orders/{id}/cancelar-suscripcion', [
-        'uses' => 'OrderController@cancelSubscription',
-        'as' => 'order.cancel.subscription',
-    ]);
-
-    Route::resource('promos', PromoController::class); //
-
-    Route::post('/get-promo-products', [
-        'uses' => 'PromoController@fetchProducts',
-        'as' => 'dynamic.promo.filter',
-    ]);
-
-    Route::resource('coupons', CouponController::class); //
-    Route::resource('reviews', ReviewController::class)->except(['store']); //
-
-    Route::get('/reviews/aprobar/{id}', [
-        'uses' => 'ReviewController@approve',
-        'as' => 'review.approve',
-    ]);
-
-    /*Membresias*/
-    Route::resource('membership', MembershipController::class);
-
-    Route::put('/membership-status/{id}', [
-        'uses' => 'MembershipController@statusUpdate',
-        'as' => 'mem-status.update',
-    ]);
-
     //Administration
     Route::resource('seo', SEOController::class); //
     Route::resource('legals', LegalTextController::class);
     Route::resource('faq', FAQController::class);
-    Route::resource('taxes', StoreTaxController::class)->except(['create']); //
-
-    Route::get('/taxes/create/{country_id}', [
-        'uses' => 'StoreTaxController@create',
-        'as' => 'taxes.create',
-    ]);
 
     Route::resource('users', UserController::class); //
     Route::get('user/config', 'UserController@config')->name('user.config');  //
@@ -324,20 +97,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
     Route::get('/notifications/all/mark-as-read', [
         'uses' => 'NotificationController@markAsRead',
         'as' => 'notifications.mark.read',
-    ]);
-
-    Route::resource('payments', PaymentMethodController::class);
-    Route::get('/payments/change-status/{id}', [
-        'uses' => 'PaymentMethodController@changeStatus',
-        'as' => 'payments.status',
-    ]);
-    Route::resource('shipments', ShipmentMethodController::class);
-    Route::resource('shipments-rules', ShipmentMethodRuleController::class);
-    Route::resource('shipping-options', ShipmentOptionsController::class);
-
-    Route::get('/shipments-rule/change-status/{id}', [
-        'uses' => 'ShipmentMethodRuleController@changeStatus',
-        'as' => 'shipments-rules.status',
     ]);
 
     //Country
