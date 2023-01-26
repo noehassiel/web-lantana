@@ -11,15 +11,17 @@
                         <div class="verticle-line dark"></div>
                         <div class="schedule-top-content">
                             <div id="w-node-ac13c773-c417-7102-9010-d65f09de88aa-efe74afb" class="schedule-title">
-                                <h3 class="card-title"></h3>
-                                <div class="body-display small"></div>
+                                <h3 class="card-title">{{ $project->name }}</h3>
+                                <div class="body-display small">{{ $project->subtitle }}</div>
                             </div>
                         </div>
                     </a>
                     <div data-w-id="ac13c773-c417-7102-9010-d65f09de88ad" class="schedule-bottom">
                         <div class="background-wrapper">
                             <div class="overlay gradient"></div>
-                            <div class="background"></div>
+                            <div class="background"
+                                style="background-image: url({{ asset('img/projects/' . $project->main_picture) }})">
+                            </div>
                         </div>
                         <div class="template-screen-content small">
                             <div id="w-node-ac13c773-c417-7102-9010-d65f09de88b2-efe74afb"
@@ -30,7 +32,7 @@
                                 <div data-w-id="ac13c773-c417-7102-9010-d65f09de88b6" class="cursur-wrapper">
                                     <div class="card-cursur on">
                                         <div id="w-node-ac13c773-c417-7102-9010-d65f09de88b8-efe74afb"
-                                            class="cursur-text">Details</div>
+                                            class="cursur-text">Ver</div>
                                         <div id="w-node-ac13c773-c417-7102-9010-d65f09de88ba-efe74afb"
                                             class="cursor-top">
                                             <div class="cursur-top-outline"></div>
@@ -47,9 +49,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="w-dyn-empty">
-            <div>No items found.</div>
         </div>
     </div>
 </div>

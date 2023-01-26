@@ -85,9 +85,9 @@
                 </ul>
             </li>
 
-            <li class="nav-item with-sub">
+            <li class="nav-item">
                 <a href="{{ route('projects.index') }}" class="nav-link">
-                    <i data-feather="users"></i> <span>Proyectos</span>
+                    <i data-feather="file-plus"></i> <span>Proyectos</span>
                 </a>
             </li>
 

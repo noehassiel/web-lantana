@@ -111,6 +111,8 @@
         </div><!-- modal-dialog -->
     </div><!-- modal -->
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
+
     <script src="{{ asset('lib/feather-icons/feather.min.js') }}"></script>
 
     <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>

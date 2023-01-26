@@ -851,37 +851,14 @@
                                     Proyectos</div>
                             </div>
                             <div class="left-intro verticle">
-                                <h1 id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b2e-efe74afb">Upcoming releases</h1>
+                                <h1 id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b2e-efe74afb">Últimos públicados</h1>
                             </div>
                         </div>
                         <div id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b30-efe74afb" class="right-dual">
-                            <div data-w-id="9a6c56ce-3841-a9fa-64e7-039c8169f601" class="tool-tip">
-                                <div class="solid-video-button-outline extra-dark">
-                                    <div class="tooltip-letter">i</div>
-                                    <div class="slider-arrow-wrapper"></div>
-                                    <div class="video-button-outline extra-small">
-                                        <div id="w-node-_9a6c56ce-3841-a9fa-64e7-039c8169f606-8169f601"
-                                            class="video-outline-wrapper top">
-                                            <div class="video-outline extra-small extra-dark"></div>
-                                        </div>
-                                        <div id="w-node-_9a6c56ce-3841-a9fa-64e7-039c8169f608-8169f601"
-                                            class="video-outline-wrapper bottom">
-                                            <div class="video-outline bottom extra-small extra-dark"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tool-tip-text">
-                                    <div class="tooltip-info">
-                                        <div class="body-display extra-small">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.</div>
-                                    </div>
-                                    <div class="tooltip-corner"></div>
-                                </div>
-                            </div>
-                            <a href="schedule.html" id="w-node-_153a900d-5d27-4c6f-76d2-750f6833200d-efe74afb"
+                            <a href="" id="w-node-_153a900d-5d27-4c6f-76d2-750f6833200d-efe74afb"
                                 class="outline-button w-inline-block">
                                 <div id="w-node-_153a900d-5d27-4c6f-76d2-750f6833200e-efe74afb" class="button-text">
-                                    View all upcoming</div>
+                                    Ver todos los proyectos</div>
                                 <div id="w-node-_153a900d-5d27-4c6f-76d2-750f68332010-efe74afb"
                                     class="button-hover-outline left">
                                     <div class="solid-button-outline"></div>

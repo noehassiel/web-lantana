@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\ProjectController;
-
 Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']], function () {
     //Dashboard
     Route::get('/', 'DashboardController@index')->name('dashboard');
@@ -54,6 +52,16 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
 
     //Proyectos
     Route::resource('projects', ProjectController::class);
+
+    Route::post('/projects/status/{id}', [
+        'uses' => 'ProjectController@status',
+        'as' => 'projects.status',
+    ]);
+
+    Route::post('projects/image', [
+        'uses' => 'ProjectController@images',
+        'as' => 'projects.images.store'
+    ]);
 
     //Públicaciones
     Route::resource('posts', PostController::class);

@@ -14,7 +14,7 @@ class BannerController extends Controller
 {
     public function index()
     {
-        $banners = Banner::orderBy('updated_at', 'desc')->orderBy('is_active', 'desc')->orderBy('priority','asc')->paginate(10);
+        $banners = Banner::orderBy('updated_at', 'desc')->orderBy('is_active', 'desc')->orderBy('priority', 'asc')->paginate(10);
 
         return view('back.banners.index')->with('banners', $banners);
     }
@@ -27,7 +27,7 @@ class BannerController extends Controller
     public function store(Request $request)
     {
         //Validar
-        $this -> validate($request, array(
+        $this->validate($request, array(
             'title' => 'unique:banners|required|max:255',
             'subtitle' => 'nullable',
             'text_button' => 'required',
@@ -45,12 +45,6 @@ class BannerController extends Controller
         $banner->link = $request->link;
         $banner->has_button = true;
         $banner->is_active = true;
-        $banner->hex = $request->hex;
-        $banner->hex_text_title = $request->hex_text_title;
-        $banner->hex_text_subtitle = $request->hex_text_subtitle;
-        $banner->hex_button = $request->hex_button;
-        $banner->hex_text_button = $request->hex_text_button;
-        $banner->position = $request->position;
         $banner->priority = $request->priority;
         $banner->is_promotional = $request->is_promotional;
 
@@ -68,7 +62,9 @@ class BannerController extends Controller
             $filename = 'bannerdesktop' . time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('img/banners/' . $filename);
 
-            Image::make($image)->resize(1280,null, function($constraint){ $constraint->aspectRatio(); })->save($location);
+            Image::make($image)->resize(1280, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($location);
 
             $banner->image_desktop = $filename;
         }
@@ -80,7 +76,9 @@ class BannerController extends Controller
             $filename = 'bannerresponsive' . time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('img/banners/' . $filename);
 
-            Image::make($image)->resize(1280,null, function($constraint){ $constraint->aspectRatio(); })->save($location);
+            Image::make($image)->resize(1280, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($location);
             $banner->image_responsive = $filename;
         }
 
@@ -111,7 +109,7 @@ class BannerController extends Controller
     public function update(Request $request, $id)
     {
         //Validar
-        $this -> validate($request, array(
+        $this->validate($request, array(
             'image' => 'sometimes|min:10|max:2100',
             'image_responsive' => 'sometimes|min:10|max:2100'
         ));
@@ -148,7 +146,9 @@ class BannerController extends Controller
             $filename = 'bannerdesktop' . time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('img/banners/' . $filename);
 
-            Image::make($image)->resize(1280,null, function($constraint){ $constraint->aspectRatio(); })->save($location);
+            Image::make($image)->resize(1280, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($location);
 
             $banner->image_desktop = $filename;
         }
@@ -159,7 +159,9 @@ class BannerController extends Controller
             $filename = 'bannerresponsive' . time() . '.' . $image->getClientOriginalExtension();
             $location = public_path('img/banners/' . $filename);
 
-            Image::make($image)->resize(1280,null, function($constraint){ $constraint->aspectRatio(); })->save($location);
+            Image::make($image)->resize(1280, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($location);
             $banner->image_responsive = $filename;
         }
 
@@ -170,7 +172,6 @@ class BannerController extends Controller
 
         // Enviar a vista
         return redirect()->route('banners.show', $banner->id);
-
     }
 
     public function status(Request $request)
@@ -178,9 +179,9 @@ class BannerController extends Controller
         // Guardar datos en la base de datos
         $banner = Banner::find($request->id);
 
-        if($banner->is_active == true) {
+        if ($banner->is_active == true) {
             $banner->is_active = false;
-        }else {
+        } else {
             $banner->is_active = true;
         }
 

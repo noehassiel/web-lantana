@@ -12,9 +12,9 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $banners = Banner::where('is_active', true)->get();
-        $projects = Project::where('is_active', true)->orderBy('created_at', 'asc')->take(6);
-        $posts = Post::where('is_publish', true)->orderBy('created_at', 'asc')->take(6);
+        $banners = Banner::where('is_active', true)->orderBy('priority', 'asc')->get();
+        $projects = Project::where('is_active', true)->orderBy('created_at', 'asc')->get()->take(6);
+        $posts = Post::where('is_publish', true)->orderBy('created_at', 'asc')->get()->take(6);
 
         return view('front.index')
             ->with('banners', $banners)

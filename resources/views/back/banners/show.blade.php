@@ -145,8 +145,6 @@
                                     <h5>Texto de botón</h5>
                                     <p>{{ $banner->text_button }}</p>
 
-                                    <h5>Color</h5>
-                                    <p>{{ $banner->hex }}</p>
                                 </div>
                                 <div class="col">
                                     <h5>Imagen</h5>
@@ -174,8 +172,8 @@
                     <h4>Vista Previa</h4>
                     <hr>
                     <div class="d-flex">
-                        <div class="card-banner d-flex justify-content-center align-items-center" id="hex_"
-                            style="background: {{ $banner->hex }}">
+                        <div class="card-banner d-flex position-relative justify-content-center align-items-center"
+                            id="hex_" style="background: {{ $banner->hex }}">
                             <div class="card-banner-content">
                                 <h5 id="title_">{{ $banner->title }}</h5>
                                 <p id="subtitle_">{{ $banner->subtitle }}</p>
