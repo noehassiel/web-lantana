@@ -35,12 +35,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
         'as' => 'popups.status',
     ]);
 
-    Route::resource('band', HeaderbandController::class);
-    Route::post('/band/status/{id}', [
-        'uses' => 'HeaderbandController@status',
-        'as' => 'band.status',
-    ]);
-
     //Configuration
     Route::get('/configuration', 'DashboardController@configuration')->name('configuration'); //
 
@@ -58,9 +52,24 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
         'as' => 'projects.status',
     ]);
 
-    Route::post('projects/image', [
-        'uses' => 'ProjectController@images',
-        'as' => 'projects.images.store'
+    Route::post('project/new-image', [
+        'uses' => 'ProjectController@storeImage',
+        'as' => 'image.store',
+    ]);
+
+    Route::post('project/main-image', [
+        'uses' => 'ProjectController@mainImage',
+        'as' => 'main.image.update'
+    ]);
+
+    Route::post('project/update-image/{id}', [
+        'uses' => 'ProjectController@updateImage',
+        'as' => 'image.update',
+    ]);
+
+    Route::delete('project/delete-image/{id}', [
+        'uses' => 'ProjectController@destroyImage',
+        'as' => 'image.destroy',
     ]);
 
     //Públicaciones
@@ -109,31 +118,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
 
     //Country
     //Route::resource('countries', CountryController::class);
-    Route::resource('states', StateController::class);
-    Route::resource('cities', CityController::class);
     Route::resource('config', StoreConfigController::class);
-
-    Route::post('config-api-token', [
-        'uses' => 'StoreConfigController@apiToken',
-        'as' => 'api.token.store',
-    ]);
-
-    Route::resource('integrations', IntegrationController::class);
-    Route::get('general-preferences', [
-        'uses' => 'IntegrationController@index',
-        'as' => 'general.config',
-    ]);
-
-    Route::resource('themes', StoreThemeController::class);
-    Route::get('/themes/{id}/cambiar-estado', [
-        'uses' => 'StoreThemeController@changeStatus',
-        'as' => 'themes.status',
-    ]);
-
-    Route::post('store-logo', [
-        'uses' => 'IntegrationController@storeLogo',
-        'as' => 'store.logo',
-    ]);
 
     // Sección Soporte
     Route::get('support', 'DashboardController@shipping')->name('support.help');
@@ -166,14 +151,11 @@ Route::get('sobre_nosotros', [
     'as' => 'about',
 ]);
 
-Route::get('catalog', 'FrontController@catalogAll')->name('catalog.all');
-Route::get('catalog_promo', 'FrontController@catalogPromo')->name('catalog.promo');
-Route::post('catalog_order', 'FrontController@catalog_order')->name('catalog.orderby');
 
-Route::get('/catalog/{category_slug}', [
-    'uses' => 'FrontController@catalog',
-    'as' => 'catalog',
-]);
+Route::get('/proyectos/{slug}', [
+    'uses' => 'FrontController@detail',
+    'as' => 'detail',
+])->where('slug', '[\w\d\-\_]+');
 
 /* Newsletter */
 Route::post('registro-newsletter', 'FrontController@newsletter')->name('newsletter_front.store');
@@ -185,53 +167,6 @@ Route::get('/busqueda-general', [
     'as' => 'search.query',
 ]);
 
-
-//Profile
-Route::group(['prefix' => 'profile', 'middleware' => ['web', 'can:customer_access']], function () {
-    Route::get('/', 'FrontController@profile')->name('profile');
-    Route::get('wishlist', 'FrontController@wishlist')->name('wishlist');
-    Route::get('orders', 'FrontController@shopping')->name('shopping');
-    Route::get('points', 'FrontController@points')->name('points');
-
-    Route::post('orders/{order_id}/request-invoice/{user_id}', [
-        'uses' => 'FrontController@invoiceRequest',
-        'as' => 'invoice.request',
-    ]);
-
-    Route::get('address', 'FrontController@address')->name('address');
-    Route::get('address/{id}/edit', 'FrontController@editAddress')->name('address.edit');
-    Route::get('account', 'FrontController@account')->name('account');
-
-    Route::put('/account/{id}', [
-        'uses' => 'FrontController@updateAccount',
-        'as' => 'profile.update',
-    ]);
-
-    Route::put('/address/{id}', [
-        'uses' => 'FrontController@updateAddress',
-        'as' => 'address.update',
-    ]);
-
-    Route::post('/address-store', [
-        'uses' => 'FrontController@storeAddress',
-        'as' => 'address.store',
-    ]);
-
-    Route::delete('/address/{id}', [
-        'uses' => 'FrontController@destroyAddress',
-        'as' => 'address.destroy',
-    ]);
-
-    Route::get('/user/change-image', [
-        'uses' => 'FrontController@editImage',
-        'as' => 'profile.image',
-    ]);
-
-    Route::put('/user/change-image/{id}', [
-        'uses' => 'FrontController@updateImage',
-        'as' => 'profile.image.update',
-    ]);
-});
 
 Route::get('legales/{type}', 'FrontController@legalText')->name('legal.text');
 Route::get('preguntas_frecuentes', 'FrontController@faqs')->name('faqs.text');

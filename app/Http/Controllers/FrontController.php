@@ -26,4 +26,12 @@ class FrontController extends Controller
     {
         return view('front.about');
     }
+
+    public function detail($slug)
+    {
+        $project = Project::where('slug', $slug);
+
+        return view('front.detail_lesson')
+            ->with('project', $project);
+    }
 }

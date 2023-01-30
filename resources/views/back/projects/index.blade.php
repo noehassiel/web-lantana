@@ -13,7 +13,7 @@
         </div>
         @if (auth()->user()->can('admin_access'))
             <div class="d-none d-md-block">
-                <a href="{{ route('banners.create') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
+                <a href="{{ route('projects.create') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
                     <i class="fas fa-plus"></i> Crear nuevo Proyecto
                 </a>
             </div>
@@ -39,6 +39,7 @@
                             <thead>
                                 <tr>
                                     <th>Título</th>
+                                    <th>Compañía</th>
                                     <th>Imagen</th>
                                     <th>Estatus</th>
                                     <th>Acciones</th>
@@ -51,11 +52,13 @@
                                             <strong>{{ $project->title }}</strong><br>
                                             <p>{{ $project->subtitle }}</p>
                                         </td>
+                                        <td style="width: 100px">
+                                            <p>{{ $project->company }}</p>
+                                        </td>
                                         <td style="width: 150px;">
                                             <img style="width: 100%;"
-                                                src="{{ asset('img/banners/' . $project->image_desktop) }}"
+                                                src="{{ asset('img/banners/' . $project->main_picture) }}"
                                                 alt="{{ $project->title }}">
-
                                         </td>
 
                                         <td>

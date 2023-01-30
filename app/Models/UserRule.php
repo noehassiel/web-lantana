@@ -5,12 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class UserRule extends Model
 {
     use HasFactory;
 
-    public function images()
-    {
-        return $this->hasMany(ProjectImage::class);
-    }
+    protected $guarded = [];
 }
