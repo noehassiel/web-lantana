@@ -433,12 +433,32 @@
                                         <div class="menu-list-title">
                                             <div class="subtitle">Usuarios</div>
                                         </div>
-                                        <div class="menu-list small">
-                                            <a data-w-id="503aaee1-b847-e62f-094b-ed97f47eccb5" href="#"
-                                                class="list-link top w-inline-block">
-                                                <div>Login</div>
-                                            </a>
-                                            <!--
+
+
+                                        @if (Auth::check())
+                                            <div class="menu-list small">
+                                                <a data-w-id="503aaee1-b847-e62f-094b-ed97f47eccb5"
+                                                    href="{{ route('dashboard') }}"
+                                                    class="list-link top w-inline-block">
+                                                    <div> Ir a tu Panel</div>
+                                                </a>
+                                                <a href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                                    class="list-link w-inline-block">
+                                                    <div>Cerrar Sesión</div>
+                                                    <form id="logout-form" action="{{ route('logout') }}"
+                                                        method="POST" style="display: none;">
+                                                        @csrf
+                                                    </form>
+                                                </a>
+                                            </div>
+                                        @else
+                                            <div class="menu-list small">
+                                                <a data-w-id="503aaee1-b847-e62f-094b-ed97f47eccb5" href="#"
+                                                    class="list-link top w-inline-block">
+                                                    <div>Iniciar Sesión</div>
+                                                </a>
+                                                <!--
                         <a data-w-id="bba9dccf-ca8a-a7e7-b7dc-fd7ecb86f619" href="#" class="list-link w-inline-block">
                           <div>Join</div>
                         </a>
@@ -446,7 +466,8 @@
                           <div>FAQ</div>
                         </a>
                         -->
-                                        </div>
+                                            </div>
+                                        @endif
                                     </div>
                                     <!--
                     <div class="menu-bottom">
