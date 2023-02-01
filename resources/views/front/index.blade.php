@@ -283,6 +283,14 @@
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
                                 </div>
+                                <div class="card-hover-link">
+                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">View templates</div>
+                                        <div class="hover-line">
+                                            <div class="hover-line-fill"></div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="hover-card-circle"></div>
                         </div>
@@ -299,6 +307,14 @@
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
                                 </div>
+                                <div class="card-hover-link">
+                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">View templates</div>
+                                        <div class="hover-line">
+                                            <div class="hover-line-fill"></div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="card top-border---tablet">
@@ -311,6 +327,14 @@
                                     <h3>Three</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
+                                </div>
+                                <div class="card-hover-link">
+                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">View templates</div>
+                                        <div class="hover-line">
+                                            <div class="hover-line-fill"></div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -328,6 +352,14 @@
                                 <h3>Four</h3>
                                 <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.</div>
+                            </div>
+                            <div class="card-hover-link">
+                                <a href="templates.html" class="underline-hover-link dark w-inline-block">
+                                    <div class="subtitle">View templates</div>
+                                    <div class="hover-line">
+                                        <div class="hover-line-fill"></div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
