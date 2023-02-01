@@ -53,7 +53,6 @@
                 <div class="card card-body text-center" style="padding:50px 0px 50px 0px;">
                     <img src="{{ asset('assets/img/group.svg') }}" class="wd-20p ml-auto mr-auto mb-5">
                     <h4>¡No hay textos legales guardadas en la base de datos!</h4>
-                    <a href="" class="btn btn-sm btn-primary btn-uppercase wd-200 ml-auto mr-auto mt-4">Reparar</a>
                 </div>
             @else
                 @foreach ($legals as $legal)
