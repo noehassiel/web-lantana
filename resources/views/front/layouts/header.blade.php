@@ -503,7 +503,7 @@
                             </nav>
                         </div>
                     </div>
-
+                    {{-- 
                     <a href="#" id="w-node-eafd5d2f-28c1-05ce-51c3-b2ae6a51a0c8-f5164266"
                         data-w-id="eafd5d2f-28c1-05ce-51c3-b2ae6a51a0c8" class="navigation-button w-inline-block">
                         <div id="w-node-eafd5d2f-28c1-05ce-51c3-b2ae6a51a0c9-f5164266" class="button-text">Contacto
@@ -521,6 +521,7 @@
                             <div class="solid-button-outline middle nav-outline"></div>
                         </div>
                     </a>
+                     --}}
                     <div class="menu-button w-nav-button">
                         <div class="menu-button-wrapper"><img src="{{ asset('img/menu-324x242x-1.svg') }}"
                                 loading="lazy" alt=""></div>
