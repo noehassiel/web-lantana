@@ -5,7 +5,7 @@
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                    <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
+                    <li class="breadcrumb-item"><a href="#">lantana</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Configuración</li>
                 </ol>
             </nav>
@@ -13,25 +13,16 @@
         </div>
         <div class="d-none d-md-block">
             <!--
-                                            <a href="{{ route('dashboard') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
-                                                Dashboard
-                                            </a>
-                                            -->
+                                                                    <a href="{{ route('dashboard') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
+                                                                        Dashboard
+                                                                    </a>
+                                                                    -->
         </div>
     </div>
 @endsection
 
 @section('content')
     <div class="row">
-
-        <div class="col-md-4 mb-4">
-            <a href="{{ route('config.index') }}">
-                <div class="card card-body h-100">
-                    <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">Configuración de la Página</h3>
-                    <h6 class="tx-12 tx-color-03 mg-b-0 mt-2">Administra la configuración general de tu página.</h6>
-                </div>
-            </a>
-        </div>
 
         <div class="col-md-4 mb-4">
             <a href="{{ route('general.config') }}">
@@ -72,18 +63,9 @@
             </a>
         </div>
 
+        {{-- 
         <div class="col-md-4 mb-4">
-            <a href="{{ route('notifications.index') }}">
-                <div class="card card-body h-100">
-                    <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">Notificaciones por Correo</h3>
-                    <h6 class="tx-12 tx-color-03 mg-b-0 mt-2">Configura los datos de servidor SMTP para notificar por correo
-                        a tus clientes y a ti mismo.</h6>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <a href="{{ route('faq.index') }}">
+            <a href="{{ route('faq.index') }}" class="disabled">
                 <div class="card card-body h-100">
                     <h3 class="tx-normal tx-rubik mg-b-0 mg-r-5 lh-1">Preguntas frecuentes</h3>
                     <h6 class="tx-12 tx-color-03 mg-b-0 mt-2">Administra las preguntas frecuentes que apareceran en tu
@@ -91,5 +73,6 @@
                 </div>
             </a>
         </div>
+         --}}
     </div>
 @endsection
