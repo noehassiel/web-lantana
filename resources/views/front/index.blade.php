@@ -263,29 +263,27 @@
                                     class="subtitle-line dark left">
                                     <div class="solid-subtitle-line dark"></div>
                                 </div>
-                                <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70c4-efe74afb" class="subtitle">What I
-                                    do</div>
+                                <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70c4-efe74afb" class="subtitle">Lo que
+                                    hacemos</div>
                             </div>
                             <div class="left-intro">
-                                <h1 id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70c7-efe74afb">title
-                                </h1>
+                                <h1 id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70c7-efe74afb">Propuesta de valor</h1>
                             </div>
                         </div>
                     </div>
                     <div class="card-wrapper">
                         <div class="card left-end">
-                            <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70cb-efe74afb" class="card-icon-circle">
-                                <img src="{{ asset('img/Icon_copy.svg') }}" loading="lazy" alt="">
-                            </div>
+                            <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70cb-efe74afb" class="card-icon-circle"><img
+                                    src="images/Icon_copy.svg" loading="lazy" alt=""></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
-                                    <h3>One</h3>
+                                    <h3>Tipo de proyecto</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View templates</div>
+                                    <a href="#" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">Button</div>
                                         <div class="hover-line">
                                             <div class="hover-line-fill"></div>
                                         </div>
@@ -294,22 +292,20 @@
                             </div>
                             <div class="hover-card-circle"></div>
                         </div>
-                        <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d1-efe74afb" class="verticle-line dark">
-                        </div>
+                        <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d1-efe74afb" class="verticle-line dark"></div>
                         <div data-w-id="495fcc9f-807c-962f-12da-95dde81c306a" class="card top-border---tablet">
-                            <div id="w-node-_495fcc9f-807c-962f-12da-95dde81c306b-efe74afb" class="card-icon-circle">
-                                <img src="{{ asset('img/academic-cap.svg') }}" loading="lazy" alt="">
-                            </div>
+                            <div id="w-node-_495fcc9f-807c-962f-12da-95dde81c306b-efe74afb" class="card-icon-circle"><img
+                                    src="images/academic-cap.svg" loading="lazy" alt=""></div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
-                                    <h3>Two</h3>
+                                    <h3>Tipo de proyecto</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View templates</div>
+                                    <a href="#" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">Button</div>
                                         <div class="hover-line">
                                             <div class="hover-line-fill"></div>
                                         </div>
@@ -318,19 +314,18 @@
                             </div>
                         </div>
                         <div class="card top-border---tablet">
-                            <div id="w-node-ebbe51c5-14ff-3d79-013b-4761fbab3fd9-efe74afb" class="card-icon-circle">
-                                <img src="i{{ asset('img/icon_mail.svg') }}" loading="lazy" alt="">
-                            </div>
+                            <div id="w-node-ebbe51c5-14ff-3d79-013b-4761fbab3fd9-efe74afb" class="card-icon-circle"><img
+                                    src="images/Icon_mail.svg" loading="lazy" alt=""></div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
-                                    <h3>Three</h3>
+                                    <h3>Tipo de proyecto</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View templates</div>
+                                    <a href="#" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">Button</div>
                                         <div class="hover-line">
                                             <div class="hover-line-fill"></div>
                                         </div>
@@ -338,37 +333,34 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70e1-efe74afb" class="verticle-line dark">
-                    </div>
-                    <div class="card top-border---tablet">
-                        <div id="w-node-e5c298b2-0e68-6837-7ac5-db551490c003-efe74afb" class="card-icon-circle">
-                            <div>?</div>
-                        </div>
-                        <div id="w-node-_3fe6fc62-febb-0ba4-2adf-2cc0524b830c-efe74afb" class="hover-card-circle">
-                        </div>
-                        <div class="card-bottom-info">
-                            <div class="card-description">
-                                <h3>Four</h3>
-                                <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.</div>
+                        <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70e1-efe74afb" class="verticle-line dark"></div>
+                        <div class="card top-border---tablet">
+                            <div id="w-node-e5c298b2-0e68-6837-7ac5-db551490c003-efe74afb" class="card-icon-circle">
+                                <div>?</div>
                             </div>
-                            <div class="card-hover-link">
-                                <a href="templates.html" class="underline-hover-link dark w-inline-block">
-                                    <div class="subtitle">View templates</div>
-                                    <div class="hover-line">
-                                        <div class="hover-line-fill"></div>
-                                    </div>
-                                </a>
+                            <div id="w-node-_3fe6fc62-febb-0ba4-2adf-2cc0524b830c-efe74afb" class="hover-card-circle">
+                            </div>
+                            <div class="card-bottom-info">
+                                <div class="card-description">
+                                    <h3>Tipo de proyecto</h3>
+                                    <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.</div>
+                                </div>
+                                <div class="card-hover-link">
+                                    <a href="#" class="underline-hover-link dark w-inline-block">
+                                        <div class="subtitle">Button</div>
+                                        <div class="hover-line">
+                                            <div class="hover-line-fill"></div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d9-efe74afb" class="verticle-line dark">
+                        <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d9-efe74afb" class="verticle-line dark"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div data-w-id="e534ebc1-ec12-3448-cfe8-14ddd3bef2ce" class="section grey wf-section">
         <div class="grid-wrapper">
