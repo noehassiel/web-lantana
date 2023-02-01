@@ -83,7 +83,7 @@
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                    <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
+                    <li class="breadcrumb-item"><a href="#">Lantana</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Pop-ups</li>
                 </ol>
             </nav>
@@ -100,8 +100,8 @@
         </div>
 
         <div class="col-md-6 text-right">
-            <a href="{{ route('popups.edit', $popup->id) }}" class="btn btn-primary mr-2"><i
-                    class="simple-icon-pencil"></i> Editar</a>
+            <a href="{{ route('popups.edit', $popup->id) }}" class="btn btn-primary mr-2"><i class="simple-icon-pencil"></i>
+                Editar</a>
 
             <form method="POST" action="{{ route('popups.destroy', $popup->id) }}" style="display: inline-block;">
                 <button type="submit" class="btn btn-outline-danger" data-toggle="tooltip" data-original-title="Borrar">

@@ -100,7 +100,7 @@
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                    <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
+                    <li class="breadcrumb-item"><a href="#">Lantana</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Pop-ups</li>
                 </ol>
             </nav>
@@ -171,11 +171,11 @@
 
                         <div class="row">
                             <!--
-                            <div class="form-group col-md-6">
-                                <label for="hex">Color</label>
-                                <input type="color" class="form-control" id="hex" name="hex" value="{{ old('hex') ?? 'red' }}" required="" />
-                            </div>
-          -->
+                                <div class="form-group col-md-6">
+                                    <label for="hex">Color</label>
+                                    <input type="color" class="form-control" id="hex" name="hex" value="{{ old('hex') ?? 'red' }}" required="" />
+                                </div>
+              -->
 
                             <div class="form-group col-md-12">
                                 <label for="image">Imagen del popup <span class="text-success">Recomendado</span></label>

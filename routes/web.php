@@ -94,6 +94,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
 
     Route::resource('newsletter', NewsletterController::class); //
     //Administration
+    Route::get('general-preferences', [
+        'uses' => 'IntegrationController@index',
+        'as' => 'general.config',
+    ]);
     Route::resource('seo', SEOController::class); //
     Route::resource('legals', LegalTextController::class);
     Route::resource('faq', FAQController::class);
