@@ -1,12 +1,12 @@
-@extends('wecommerce::back.layouts.main')
+@extends('back.layouts.main')
 
 @section('title')
     <div class="d-sm-flex align-items-center justify-content-between mg-lg-b-30">
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Usuarios</li>
+                    <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Usuarios</li>
                 </ol>
             </nav>
             <h4 class="mg-b-0 tx-spacing--1">Editar usuarios</h4>
@@ -41,7 +41,7 @@
                                 <input type="text" name="name" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="email">Correo</label>
@@ -55,7 +55,7 @@
                                 <input type="password" name="password" class="form-control">
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@
                                 <label class="custom-control-label" for="products">Productos</label>
                             </div>
                         </div>
-    
+
                         <div class="col-md-6">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="orders">

@@ -1,12 +1,12 @@
-@extends('wecommerce::back.layouts.main')
+@extends('back.layouts.main')
 
 @section('title')
     <div class="d-sm-flex align-items-center justify-content-between mg-lg-b-30">
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">Configuración</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Configuración</li>
+                    <li class="breadcrumb-item"><a href="#">Configuración</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Configuración</li>
                 </ol>
             </nav>
             <h4 class="mg-b-0 tx-spacing--1">Configuración General</h4>
@@ -36,7 +36,7 @@
                                 <input type="text" name="name" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="email">Correo</label>
@@ -93,14 +93,14 @@
                                 <input type="text" name="city" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-8">
                             <div class="form-group">
                                 <label for="street">Dirección</label>
                                 <input type="text" name="street" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="num">Num.</label>
@@ -143,7 +143,7 @@
                                 </select>
                             </div>
                         </div>
-    
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="industry">Sistema de unidades</label>

@@ -1,4 +1,4 @@
-@extends('wecommerce::back.layouts.main')
+@extends('back.layouts.main')
 
 @section('title')
     Users -
@@ -9,7 +9,7 @@
         <div class="col-md-12 mb-4 text-start">
             <a href="{{ route('reviews.index') }}" class="btn btn-primary">Regresar</a>
         </div>
-    
+
         <div class="row">
             <div class="col-md-12">
                 <div class="card p-3">

@@ -1,4 +1,4 @@
-@extends('wecommerce::back.layouts.main')
+@extends('back.layouts.main')
 
 @section('title')
     SEO -

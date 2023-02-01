@@ -1,12 +1,12 @@
-@extends('wecommerce::back.layouts.main')
+@extends('back.layouts.main')
 
 @section('title')
     <div class="d-sm-flex align-items-center justify-content-between mg-lg-b-30">
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
-                <li class="breadcrumb-item active" aria-current="page">SEO</li>
+                    <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">SEO</li>
                 </ol>
             </nav>
             <h4 class="mg-b-0 tx-spacing--1">Editar Seos</h4>
@@ -41,7 +41,7 @@
                                 <input type="text" name="title" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="description">Descripcion</label>
@@ -55,14 +55,14 @@
                                 <input type="text" name="keywords" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="canonical_url">Canonical URL</label>
                                 <input type="url" name="canonical_url" class="form-control">
                             </div>
                         </div>
-    
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="alternative_url">Alternativa URL</label>
