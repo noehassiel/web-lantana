@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Session;
-use Nowyouwerkn\WeCommerce\Models\SEO;
-use Nowyouwerkn\WeCommerce\Models\StoreConfig;
+use App\Models\SEO;
+use App\Models\StoreConfig;
 use Illuminate\Http\Request;
 
 class StoreConfigController extends Controller
@@ -12,7 +12,7 @@ class StoreConfigController extends Controller
     public function index()
     {
         $config = StoreConfig::find('1');
-        return view('wecommerce::back.config_settings.index')->with('config', $config);
+        return view('back.config_settings.index')->with('config', $config);
     }
 
     public function create()
