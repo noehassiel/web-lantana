@@ -127,21 +127,20 @@
                                                     class="subtitle-line left">
                                                     <div class="solid-subtitle-line"></div>
                                                 </div>
-                                                <div class="subtitle light">Better design</div>
+                                                <div class="subtitle light">subtitle</div>
                                                 <div id="w-node-_1637b49a-7f68-ec54-42e6-368c2d0c2dff-efe74afb"
                                                     class="subtitle-line">
                                                     <div class="solid-subtitle-line"></div>
                                                 </div>
                                             </div>
-                                            <h1 class="xxl-heading">Templates &amp; courses to help you build sites that
-                                                get attention.</h1>
+                                            <h1 class="xxl-heading">Title</h1>
                                         </div>
                                         <div id="w-node-e5a25cec-40b9-b5a4-8488-ef7f0193645e-efe74afb"
                                             class="dual-button">
                                             <a href="templates.html" data-w-id="c0fac5ae-b14a-fa0f-8ab2-4f83a9dd4c30"
                                                 class="outline-button light left w-inline-block">
                                                 <div id="w-node-c0fac5ae-b14a-fa0f-8ab2-4f83a9dd4c31-efe74afb"
-                                                    class="button-text">View templates</div>
+                                                    class="button-text">Button</div>
                                                 <div id="w-node-c0fac5ae-b14a-fa0f-8ab2-4f83a9dd4c33-efe74afb"
                                                     class="button-hover-outline left">
                                                     <div class="solid-button-outline light"></div>
@@ -151,23 +150,6 @@
                                                     <div class="solid-button-outline right light"></div>
                                                 </div>
                                                 <div id="w-node-c0fac5ae-b14a-fa0f-8ab2-4f83a9dd4c37-efe74afb"
-                                                    class="button-hover-outline middle">
-                                                    <div class="solid-button-outline middle light"></div>
-                                                </div>
-                                            </a>
-                                            <a href="academy/courses.html"
-                                                class="outline-button light right w-inline-block">
-                                                <div id="w-node-d343ed2a-d666-2a47-8f81-d78b46c908fd-efe74afb"
-                                                    class="button-text">Take courses</div>
-                                                <div id="w-node-d343ed2a-d666-2a47-8f81-d78b46c908ff-efe74afb"
-                                                    class="button-hover-outline left">
-                                                    <div class="solid-button-outline light"></div>
-                                                </div>
-                                                <div id="w-node-d343ed2a-d666-2a47-8f81-d78b46c90901-efe74afb"
-                                                    class="button-hover-outline right">
-                                                    <div class="solid-button-outline right light"></div>
-                                                </div>
-                                                <div id="w-node-d343ed2a-d666-2a47-8f81-d78b46c90903-efe74afb"
                                                     class="button-hover-outline middle">
                                                     <div class="solid-button-outline middle light"></div>
                                                 </div>
@@ -285,7 +267,7 @@
                                     do</div>
                             </div>
                             <div class="left-intro">
-                                <h1 id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70c7-efe74afb">Building webflow products
+                                <h1 id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70c7-efe74afb">title
                                 </h1>
                             </div>
                         </div>
@@ -297,17 +279,9 @@
                             </div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
-                                    <h3>Templates</h3>
+                                    <h3>One</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
-                                </div>
-                                <div class="card-hover-link">
-                                    <a href="templates.html" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View templates</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                             <div class="hover-card-circle"></div>
@@ -321,72 +295,48 @@
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
-                                    <h3>Academy</h3>
+                                    <h3>Two</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
-                                </div>
-                                <div class="card-hover-link">
-                                    <a href="academy/courses.html" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View Courses</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="card top-border---tablet">
                             <div id="w-node-ebbe51c5-14ff-3d79-013b-4761fbab3fd9-efe74afb" class="card-icon-circle">
-                                <img src="i{{ asset('img/Icon_mail.svg') }}" loading="lazy" alt="">
+                                <img src="i{{ asset('img/icon_mail.svg') }}" loading="lazy" alt="">
                             </div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
-                                    <h3>Newsletter</h3>
+                                    <h3>Three</h3>
                                     <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</div>
                                 </div>
-                                <div class="card-hover-link">
-                                    <a href="newsletter-designs/recent.html"
-                                        class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View Newsletter</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
-                                </div>
                             </div>
                         </div>
-                        <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70e1-efe74afb" class="verticle-line dark">
+                    </div>
+                    <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70e1-efe74afb" class="verticle-line dark">
+                    </div>
+                    <div class="card top-border---tablet">
+                        <div id="w-node-e5c298b2-0e68-6837-7ac5-db551490c003-efe74afb" class="card-icon-circle">
+                            <div>?</div>
                         </div>
-                        <div class="card top-border---tablet">
-                            <div id="w-node-e5c298b2-0e68-6837-7ac5-db551490c003-efe74afb" class="card-icon-circle">
-                                <div>?</div>
-                            </div>
-                            <div id="w-node-_3fe6fc62-febb-0ba4-2adf-2cc0524b830c-efe74afb" class="hover-card-circle">
-                            </div>
-                            <div class="card-bottom-info">
-                                <div class="card-description">
-                                    <h3>Support</h3>
-                                    <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</div>
-                                </div>
-                                <div class="card-hover-link">
-                                    <a href="support/engine.html" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">View Support</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
-                                </div>
+                        <div id="w-node-_3fe6fc62-febb-0ba4-2adf-2cc0524b830c-efe74afb" class="hover-card-circle">
+                        </div>
+                        <div class="card-bottom-info">
+                            <div class="card-description">
+                                <h3>Four</h3>
+                                <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</div>
                             </div>
                         </div>
-                        <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d9-efe74afb" class="verticle-line dark">
-                        </div>
+                    </div>
+                    <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d9-efe74afb" class="verticle-line dark">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div data-w-id="e534ebc1-ec12-3448-cfe8-14ddd3bef2ce" class="section grey wf-section">
         <div class="grid-wrapper">
@@ -545,7 +495,7 @@
                         </div>
                         <div class="clip">
                             <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(10deg, 10deg);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(10deg, 10deg);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(10deg, 10deg);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(10deg, 10deg);opacity:0"
-                                class="number-title">Template Clones</div>
+                                class="number-title">Dato</div>
                         </div>
                     </div>
                 </div>
@@ -558,11 +508,10 @@
                                     <div class="solid-subtitle-line dark"></div>
                                 </div>
                                 <div id="w-node-db372a5c-96a9-1abc-9df6-b35454d9f92a-efe74afb" class="subtitle">
-                                    Vision &amp; mission</div>
+                                    Vision &amp; Mision</div>
                             </div>
                             <div class="left-intro small-width">
-                                <h1 id="w-node-db372a5c-96a9-1abc-9df6-b35454d9f92d-efe74afb">Making kindness louder
-                                    one designer at a time.</h1>
+                                <h1 id="w-node-db372a5c-96a9-1abc-9df6-b35454d9f92d-efe74afb">Titulo</h1>
                             </div>
                         </div>
                         <div class="body-display dual-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -591,6 +540,7 @@
             </div>
         </div>
     </div>
+    {{-- 
     <div data-w-id="2e0b3d72-7620-ad56-01e1-60b8191d7b7c" class="section dark no-padding clip wf-section">
         <div class="section-scroll-cover">
             <div class="grid-wrapper">
@@ -836,6 +786,7 @@
         </div>
         <div class="section-cover"></div>
     </div>
+     --}}
     <div class="section grey no-padding cut wf-section">
         <div class="grid-wrapper">
             <div id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b25-efe74afb" class="section-box no-top-margin">
@@ -958,16 +909,15 @@
                                     class="subtitle-line left">
                                     <div class="solid-subtitle-line"></div>
                                 </div>
-                                <div class="subtitle light">Webflow training</div>
+                                <div class="subtitle light">Subtitulo</div>
                                 <div id="w-node-_0f65cd45-6575-c063-72d6-f7ff67be0b33-efe74afb" class="subtitle-line">
                                     <div class="solid-subtitle-line"></div>
                                 </div>
                             </div>
-                            <h1 class="xxl-heading">Learn how to build webflow sites that get attention</h1>
+                            <h1 class="xxl-heading">Parrafo</h1>
                         </div>
                         <div id="w-node-_0f65cd45-6575-c063-72d6-f7ff67be0b37-efe74afb" class="medium-width">
-                            <div class="body-display light">Free webflow training on skills and processes to help you
-                                build memorable sites that attract new clients and customers.</div>
+                            <div class="body-display light">Parrafo</div>
                         </div>
                     </div>
                     <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e3-f4ebe4e3"
@@ -1009,271 +959,260 @@
                     <div class="plus-line"></div>
                     <div class="plus-line verticle"></div>
                 </div>
-                <a href="academy/courses.html" id="w-node-_18fab3a1-55fb-4b77-edaa-da5a91012830-efe74afb"
-                    class="underline-hover-link w-inline-block">
-                    <div class="subtitle light">View courses</div>
-                    <div class="hover-line light">
-                        <div class="hover-line-fill light"></div>
-                    </div>
-                </a>
-                <a href="#paths" id="w-node-b585e1db-afe5-71a0-4ef0-0e3a3644b9b4-efe74afb"
-                    class="underline-hover-link w-inline-block">
-                    <div class="subtitle light">Course paths</div>
-                    <div class="hover-line">
-                        <div class="hover-line-fill light"></div>
-                    </div>
-                </a>
             </div>
             <div class="verticle-line"></div>
         </div>
         <div style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:flex"
             class="section-cover"></div>
     </div>
-    <div class="section grey no-padding cut wf-section">
-        <div class="grid-wrapper">
-            <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7558-efe74afb" class="section-box no-top-margin">
-                <div class="stacked-content">
-                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd755a-efe74afb" class="dual-grid">
-                        <div class="stacked-heading">
-                            <div class="left-intro">
-                                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd755d-efe74afb"
-                                    class="subtitle-line dark left">
-                                    <div class="solid-subtitle-line dark"></div>
+    @if ($posts->count() != 0)
+        <div class="section grey no-padding cut wf-section">
+            <div class="grid-wrapper">
+                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7558-efe74afb" class="section-box no-top-margin">
+                    <div class="stacked-content">
+                        <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd755a-efe74afb" class="dual-grid">
+                            <div class="stacked-heading">
+                                <div class="left-intro">
+                                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd755d-efe74afb"
+                                        class="subtitle-line dark left">
+                                        <div class="solid-subtitle-line dark"></div>
+                                    </div>
+                                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd755f-efe74afb" class="subtitle">
+                                        Project path</div>
                                 </div>
-                                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd755f-efe74afb" class="subtitle">
-                                    Project path</div>
+                                <div class="left-intro">
+                                    <h1 id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7562-efe74afb">Build real world
+                                        projects</h1>
+                                </div>
                             </div>
-                            <div class="left-intro">
-                                <h1 id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7562-efe74afb">Build real world
-                                    projects</h1>
-                            </div>
-                        </div>
-                        <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7564-efe74afb" class="right-dual">
-                            <div data-w-id="9a6c56ce-3841-a9fa-64e7-039c8169f601" class="tool-tip">
-                                <div class="solid-video-button-outline extra-dark">
-                                    <div class="tooltip-letter">i</div>
-                                    <div class="slider-arrow-wrapper"></div>
-                                    <div class="video-button-outline extra-small">
-                                        <div id="w-node-_9a6c56ce-3841-a9fa-64e7-039c8169f606-8169f601"
-                                            class="video-outline-wrapper top">
-                                            <div class="video-outline extra-small extra-dark"></div>
-                                        </div>
-                                        <div id="w-node-_9a6c56ce-3841-a9fa-64e7-039c8169f608-8169f601"
-                                            class="video-outline-wrapper bottom">
-                                            <div class="video-outline bottom extra-small extra-dark"></div>
+                            <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7564-efe74afb" class="right-dual">
+                                <div data-w-id="9a6c56ce-3841-a9fa-64e7-039c8169f601" class="tool-tip">
+                                    <div class="solid-video-button-outline extra-dark">
+                                        <div class="tooltip-letter">i</div>
+                                        <div class="slider-arrow-wrapper"></div>
+                                        <div class="video-button-outline extra-small">
+                                            <div id="w-node-_9a6c56ce-3841-a9fa-64e7-039c8169f606-8169f601"
+                                                class="video-outline-wrapper top">
+                                                <div class="video-outline extra-small extra-dark"></div>
+                                            </div>
+                                            <div id="w-node-_9a6c56ce-3841-a9fa-64e7-039c8169f608-8169f601"
+                                                class="video-outline-wrapper bottom">
+                                                <div class="video-outline bottom extra-small extra-dark"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tool-tip-text">
-                                    <div class="tooltip-info">
-                                        <div class="body-display extra-small">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.</div>
+                                    <div class="tool-tip-text">
+                                        <div class="tooltip-info">
+                                            <div class="body-display extra-small">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</div>
+                                        </div>
+                                        <div class="tooltip-corner"></div>
                                     </div>
-                                    <div class="tooltip-corner"></div>
                                 </div>
+                                <a href="academy/courses.html" id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7566-efe74afb"
+                                    class="outline-button w-inline-block">
+                                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7567-efe74afb" class="button-text">
+                                        View all project paths</div>
+                                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7569-efe74afb"
+                                        class="button-hover-outline left">
+                                        <div class="solid-button-outline"></div>
+                                    </div>
+                                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd756b-efe74afb"
+                                        class="button-hover-outline right">
+                                        <div class="solid-button-outline right"></div>
+                                    </div>
+                                    <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd756d-efe74afb"
+                                        class="button-hover-outline middle">
+                                        <div class="solid-button-outline middle"></div>
+                                    </div>
+                                </a>
                             </div>
-                            <a href="academy/courses.html" id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7566-efe74afb"
-                                class="outline-button w-inline-block">
-                                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7567-efe74afb" class="button-text">
-                                    View all project paths</div>
-                                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd7569-efe74afb"
-                                    class="button-hover-outline left">
-                                    <div class="solid-button-outline"></div>
-                                </div>
-                                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd756b-efe74afb"
-                                    class="button-hover-outline right">
-                                    <div class="solid-button-outline right"></div>
-                                </div>
-                                <div id="w-node-_66659e4f-c78a-1970-6da3-5ba133dd756d-efe74afb"
-                                    class="button-hover-outline middle">
-                                    <div class="solid-button-outline middle"></div>
-                                </div>
-                            </a>
                         </div>
-                    </div>
-                    <div class="template-slider">
-                        <div data-delay="4000" data-animation="slide" class="cards-slider w-slider"
-                            data-autoplay="false" data-easing="ease" data-hide-arrows="false"
-                            data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3"
-                            data-duration="500" data-infinite="true">
-                            <div class="cards-mask w-slider-mask">
-                                <div class="card-slide w-slide">
-                                    <div class="singlie-item-wrapper w-dyn-list">
-                                        <div role="list" class="single-item-list w-dyn-items">
-                                            <div role="listitem" class="single-item w-dyn-item">
-                                                <div data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32aba6"
-                                                    class="academy-card">
-                                                    <div class="card-top">
-                                                        <div class="card-icon"><img src="images/academic-cap.svg"
-                                                                loading="lazy" alt=""></div>
-                                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abaa-efe74afb">
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-top">
-                                                        <div class="card-icon"><img src="images/Icon_certificate.svg"
-                                                                loading="lazy" alt=""></div>
-                                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abae-efe74afb">
-                                                        </div>
-                                                    </div>
-                                                    <div data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abaf"
-                                                        class="project-top-image">
-                                                        <div class="background-wrapper">
-                                                            <div class="overlay hide-on-tablet"></div>
-                                                            <div style="opacity:1;-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg)"
-                                                                class="background"></div>
-                                                            <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg)"
-                                                                class="html-embed w-embed">
-                                                                <div style="position:absolute; top:0; left:0; width:100%; height:100%;"
-                                                                    data-poster-url="https://assets.website-files.com/60d610589ff1af7f8d213183/-poster-00001.jpg"
-                                                                    data-video-urls="https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.mp4,https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.webm"
-                                                                    data-autoplay="true" data-loop="true"
-                                                                    data-wf-ignore="true"
-                                                                    class="w-background-video w-background-video-atom">
-                                                                    <video autoplay="" loop=""
-                                                                        style="background-image:url(&quot;https://assets.website-files.com/60d610589ff1af7f8d213183/-poster-00001.jpg&quot;)"
-                                                                        muted="" playsinline=""
-                                                                        data-wf-ignore="true" data-object-fit="cover">
-                                                                        <source
-                                                                            src="https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.mp4"
-                                                                            data-wf-ignore="true">
-                                                                        <source
-                                                                            src="https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.webm"
-                                                                            data-wf-ignore="true">
-                                                                    </video>
-                                                                </div>
+                        <div class="template-slider">
+                            <div data-delay="4000" data-animation="slide" class="cards-slider w-slider"
+                                data-autoplay="false" data-easing="ease" data-hide-arrows="false"
+                                data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3"
+                                data-duration="500" data-infinite="true">
+                                <div class="cards-mask w-slider-mask">
+                                    <div class="card-slide w-slide">
+                                        <div class="singlie-item-wrapper w-dyn-list">
+                                            <div role="list" class="single-item-list w-dyn-items">
+                                                <div role="listitem" class="single-item w-dyn-item">
+                                                    <div data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32aba6"
+                                                        class="academy-card">
+                                                        <div class="card-top">
+                                                            <div class="card-icon"><img src="images/academic-cap.svg"
+                                                                    loading="lazy" alt=""></div>
+                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abaa-efe74afb">
                                                             </div>
                                                         </div>
-                                                        <div class="template-screen-content small">
-                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abb5-efe74afb"
-                                                                style="-webkit-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                                                class="template-hover-top">
-                                                                <a data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abb6"
-                                                                    href="#" class="icon-link w-inline-block"><img
-                                                                        src="images/play-924x242x.svg" loading="lazy"
-                                                                        alt="">
-                                                                    <div class="tool-tip-text bottom">
-                                                                        <div class="tooltip-corner bottom"></div>
-                                                                        <div class="tooltip-info small">
-                                                                            <div class="body-display extra-small">
-                                                                                Start course</div>
+                                                        <div class="card-top">
+                                                            <div class="card-icon"><img src="images/Icon_certificate.svg"
+                                                                    loading="lazy" alt=""></div>
+                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abae-efe74afb">
+                                                            </div>
+                                                        </div>
+                                                        <div data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abaf"
+                                                            class="project-top-image">
+                                                            <div class="background-wrapper">
+                                                                <div class="overlay hide-on-tablet"></div>
+                                                                <div style="opacity:1;-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0deg, 0deg)"
+                                                                    class="background"></div>
+                                                                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-3deg, -3deg)"
+                                                                    class="html-embed w-embed">
+                                                                    <div style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                                                                        data-poster-url="https://assets.website-files.com/60d610589ff1af7f8d213183/-poster-00001.jpg"
+                                                                        data-video-urls="https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.mp4,https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.webm"
+                                                                        data-autoplay="true" data-loop="true"
+                                                                        data-wf-ignore="true"
+                                                                        class="w-background-video w-background-video-atom">
+                                                                        <video autoplay="" loop=""
+                                                                            style="background-image:url(&quot;https://assets.website-files.com/60d610589ff1af7f8d213183/-poster-00001.jpg&quot;)"
+                                                                            muted="" playsinline=""
+                                                                            data-wf-ignore="true" data-object-fit="cover">
+                                                                            <source
+                                                                                src="https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.mp4"
+                                                                                data-wf-ignore="true">
+                                                                            <source
+                                                                                src="https://assets.website-files.com/60d610589ff1af7f8d213183/-transcode.webm"
+                                                                                data-wf-ignore="true">
+                                                                        </video>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="template-screen-content small">
+                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abb5-efe74afb"
+                                                                    style="-webkit-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                                    class="template-hover-top">
+                                                                    <a data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abb6"
+                                                                        href="#"
+                                                                        class="icon-link w-inline-block"><img
+                                                                            src="images/play-924x242x.svg" loading="lazy"
+                                                                            alt="">
+                                                                        <div class="tool-tip-text bottom">
+                                                                            <div class="tooltip-corner bottom"></div>
+                                                                            <div class="tooltip-info small">
+                                                                                <div class="body-display extra-small">
+                                                                                    Start course</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <a data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abbd"
+                                                                    href="#"
+                                                                    class="template-screen-link w-inline-block">
+                                                                    <div data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abbe"
+                                                                        class="cursur-wrapper">
+                                                                        <div class="card-cursur on">
+                                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc0-efe74afb"
+                                                                                class="cursur-text">Details</div>
+                                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc2-efe74afb"
+                                                                                class="cursor-top">
+                                                                                <div class="cursur-top-outline"></div>
+                                                                            </div>
+                                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc4-efe74afb"
+                                                                                class="cursor-top bottom">
+                                                                                <div class="cursur-top-outline bottom">
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
-                                                            <a data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abbd"
-                                                                href="#"
-                                                                class="template-screen-link w-inline-block">
-                                                                <div data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abbe"
-                                                                    class="cursur-wrapper">
-                                                                    <div class="card-cursur on">
-                                                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc0-efe74afb"
-                                                                            class="cursur-text">Details</div>
-                                                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc2-efe74afb"
-                                                                            class="cursor-top">
-                                                                            <div class="cursur-top-outline"></div>
-                                                                        </div>
-                                                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc4-efe74afb"
-                                                                            class="cursor-top bottom">
-                                                                            <div class="cursur-top-outline bottom">
+                                                        </div>
+                                                        <a href="#" class="card-info small w-inline-block">
+                                                            <div class="card-info-top small stacked">
+                                                                <h3 class="card-title medium"></h3>
+                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc9-efe74afb"
+                                                                    class="category-wrapper">
+                                                                    <div class="body-display small"></div>
+                                                                    <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abcb-efe74afb"
+                                                                        class="dot"></div>
+                                                                    <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abcc-efe74afb"
+                                                                        data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abcc"
+                                                                        class="more-tag">
+                                                                        <div></div>
+                                                                        <div class="tool-tip-text small">
+                                                                            <div class="tooltip-info">
+                                                                                <div class="subtitle small">Categories
+                                                                                </div>
+                                                                                <div class="body-display extra-small">
+                                                                                </div>
                                                                             </div>
+                                                                            <div class="tooltip-corner"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </a>
-                                                        </div>
+                                                            </div>
+                                                            <div class="horizontal-line">
+                                                                <div style="-webkit-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                                    class="hover-line-fill"></div>
+                                                            </div>
+                                                            <div class="card-stats small">
+                                                                <div class="dynamic-dual-text">
+                                                                    <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abd8-efe74afb"
+                                                                        class="subtitle"></div>
+                                                                    <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abd9-efe74afb"
+                                                                        class="subtitle">hours</div>
+                                                                </div>
+                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abdb-efe74afb"
+                                                                    class="dynamic-dual-text">
+                                                                    <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abdc-efe74afb"
+                                                                        class="subtitle"></div>
+                                                                    <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abdd-efe74afb"
+                                                                        class="subtitle">lessons</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
                                                     </div>
-                                                    <a href="#" class="card-info small w-inline-block">
-                                                        <div class="card-info-top small stacked">
-                                                            <h3 class="card-title medium"></h3>
-                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abc9-efe74afb"
-                                                                class="category-wrapper">
-                                                                <div class="body-display small"></div>
-                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abcb-efe74afb"
-                                                                    class="dot"></div>
-                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abcc-efe74afb"
-                                                                    data-w-id="eef7ad25-8ca4-d233-3e89-d221fc32abcc"
-                                                                    class="more-tag">
-                                                                    <div></div>
-                                                                    <div class="tool-tip-text small">
-                                                                        <div class="tooltip-info">
-                                                                            <div class="subtitle small">Categories
-                                                                            </div>
-                                                                            <div class="body-display extra-small">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="tooltip-corner"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="horizontal-line">
-                                                            <div style="-webkit-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                                                class="hover-line-fill"></div>
-                                                        </div>
-                                                        <div class="card-stats small">
-                                                            <div class="dynamic-dual-text">
-                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abd8-efe74afb"
-                                                                    class="subtitle"></div>
-                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abd9-efe74afb"
-                                                                    class="subtitle">hours</div>
-                                                            </div>
-                                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abdb-efe74afb"
-                                                                class="dynamic-dual-text">
-                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abdc-efe74afb"
-                                                                    class="subtitle"></div>
-                                                                <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32abdd-efe74afb"
-                                                                    class="subtitle">lessons</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="w-dyn-empty">
-                                            <div>No items found.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left-arrow left w-slider-arrow-left">
-                                <div class="solid-video-button-outline extra-dark">
-                                    <div class="slider-arrow-wrapper"><img src="images/arrow-left-final24x242x.svg"
-                                            loading="lazy" alt="" class="invert-small"></div>
-                                    <div class="video-button-outline small">
-                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32ace7-efe74afb"
-                                            class="video-outline-wrapper top">
-                                            <div class="video-outline small"></div>
-                                        </div>
-                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32ace9-efe74afb"
-                                            class="video-outline-wrapper bottom">
-                                            <div class="video-outline bottom small"></div>
+                                            <div class="w-dyn-empty">
+                                                <div>No items found.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="left-arrow right w-slider-arrow-right">
-                                <div class="solid-video-button-outline extra-dark">
-                                    <div class="slider-arrow-wrapper"><img src="images/arrow-right-final24x242x.svg"
-                                            loading="lazy" alt="" class="invert-small"></div>
-                                    <div class="video-button-outline small">
-                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32acf0-efe74afb"
-                                            class="video-outline-wrapper top">
-                                            <div class="video-outline small"></div>
-                                        </div>
-                                        <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32acf2-efe74afb"
-                                            class="video-outline-wrapper bottom">
-                                            <div class="video-outline bottom small"></div>
+                                <div class="left-arrow left w-slider-arrow-left">
+                                    <div class="solid-video-button-outline extra-dark">
+                                        <div class="slider-arrow-wrapper"><img src="images/arrow-left-final24x242x.svg"
+                                                loading="lazy" alt="" class="invert-small"></div>
+                                        <div class="video-button-outline small">
+                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32ace7-efe74afb"
+                                                class="video-outline-wrapper top">
+                                                <div class="video-outline small"></div>
+                                            </div>
+                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32ace9-efe74afb"
+                                                class="video-outline-wrapper bottom">
+                                                <div class="video-outline bottom small"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="left-arrow right w-slider-arrow-right">
+                                    <div class="solid-video-button-outline extra-dark">
+                                        <div class="slider-arrow-wrapper"><img src="images/arrow-right-final24x242x.svg"
+                                                loading="lazy" alt="" class="invert-small"></div>
+                                        <div class="video-button-outline small">
+                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32acf0-efe74afb"
+                                                class="video-outline-wrapper top">
+                                                <div class="video-outline small"></div>
+                                            </div>
+                                            <div id="w-node-eef7ad25-8ca4-d233-3e89-d221fc32acf2-efe74afb"
+                                                class="video-outline-wrapper bottom">
+                                                <div class="video-outline bottom small"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hide-slide-nav w-slider-nav w-round"></div>
                             </div>
-                            <div class="hide-slide-nav w-slider-nav w-round"></div>
                         </div>
                     </div>
                 </div>
+                <div class="grey-fill top"></div>
+                <div class="fill"></div>
             </div>
-            <div class="grey-fill top"></div>
-            <div class="fill"></div>
         </div>
-    </div>
+    @endif
 @endsection
