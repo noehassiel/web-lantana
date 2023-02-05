@@ -16,11 +16,9 @@
                     <div class="brand large dark">
                         <div>Lantana</div>
                     </div>
-                    <div class="body-display small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem
-                        lacus,
-                        feugiat a odio nec, feugiat suscipit ipsum. Quisque maximus, justo vitae facilisis aliquam, nibh
-                        ante
-                        molestie turpis.</div>
+                    <div class="body-display small">Nos dedicamos a la construcción de obras de infraestructura civil,
+                        estamos comprometidos con la satisfacción total del cliente y la mejora continua de la empresa.
+                    </div>
                 </div>
                 <div id="w-node-_0a9254d9-1c51-592d-370c-8692c35b8253-130983d2" class="lesson-icon-wrapper">
                     <a data-w-id="0a9254d9-1c51-592d-370c-8692c35b8263" href="https://twitter.com/Tycreated"
@@ -118,30 +116,23 @@
             <div class="stacked-intro">
                 <div class="subtitle large">Legales</div>
                 <div id="w-node-_4fd79b1b-32cf-17a2-8994-ca3816d638ae-130983d2" class="footer-list">
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>Uno</div>
-                        <div class="hover-line">
-                            <div class="hover-line-fill"></div>
-                        </div>
-                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
-                                alt="" class="invert-small"></div>
-                    </a>
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>Dos</div>
-                        <div class="hover-line">
-                            <div class="hover-line-fill"></div>
-                        </div>
-                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
-                                alt="" class="invert-small"></div>
-                    </a>
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>Tres</div>
-                        <div class="hover-line">
-                            <div class="hover-line-fill"></div>
-                        </div>
-                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
-                                alt="" class="invert-small"></div>
-                    </a>
+
+                    @php
+                        $legales = App\Models\LegalText::orderBy('priority', 'asc')
+                            ->orderBy('created_at', 'asc')
+                            ->get();
+                    @endphp
+
+                    @foreach ($legales as $legal)
+                        <a href="{{ route('legal.text', $legal->slug) }}" class="footer-list-item w-inline-block">
+                            <div>{{ $legal->title }}</div>
+                            <div class="hover-line">
+                                <div class="hover-line-fill"></div>
+                            </div>
+                            <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg"
+                                    loading="lazy" alt="" class="invert-small"></div>
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>

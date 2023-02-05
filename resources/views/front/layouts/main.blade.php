@@ -75,6 +75,8 @@
             background: #cbd0dd;
         }
     </style>
+
+    @stack('styles')
 </head>
 
 <body class="body">

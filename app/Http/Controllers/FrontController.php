@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Banner;
 use App\Models\Post;
-
+use App\Models\Banner;
 use App\Models\Project;
+
+use App\Models\LegalText;
+use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
@@ -33,5 +34,19 @@ class FrontController extends Controller
 
         return view('front.detail_lesson')
             ->with('project', $project);
+    }
+
+    public function legalText($slug)
+    {
+        $text = LegalText::where('slug', $slug)->first();
+
+        $legales = LegalText::get();
+
+        $projects = Project::take(5)->orderBy('created_at', 'asc')->where('is_active', 1)->get();
+
+        return view('front.privacy')
+            ->with('text', $text)
+            ->with('projects', $projects)
+            ->with('legales', $legales);
     }
 }

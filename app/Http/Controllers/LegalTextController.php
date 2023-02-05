@@ -16,30 +16,30 @@ class LegalTextController extends Controller
 
     public function index()
     {
-        $legals = LegalText::orderBy('priority','asc')->get();
+        $legals = LegalText::orderBy('priority', 'asc')->get();
 
         return view('back.legals.index')->with('legals', $legals);
     }
 
     public function create()
     {
-
     }
 
     public function store(Request $request)
     {
         //Validar
-        $this -> validate($request, array(
+        $this->validate($request, array(
             'description' => 'required',
         ));
 
         // Guardar datos en la base de datos
         $legal = new LegalText;
 
-        $legal->type = $request->type;
-        $legal->title = Purifier::clean($request->title);
-        $legal->description = Purifier::clean($request->description);
+        $legal->title = $request->title;
+        $legal->description = $request->description;
         $legal->priority = $request->priority;
+
+        $legal->slug = Str::slug($request->title, '_');
 
         $legal->save();
 
@@ -66,7 +66,7 @@ class LegalTextController extends Controller
     public function update(Request $request, $id)
     {
         //Validar
-        $this -> validate($request, array(
+        $this->validate($request, array(
             'description' => 'required',
             'title' => 'required'
         ));

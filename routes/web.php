@@ -172,5 +172,5 @@ Route::get('/busqueda-general', [
 ]);
 
 
-Route::get('legales/{type}', 'FrontController@legalText')->name('legal.text');
+Route::get('legales/{slug}', 'FrontController@legalText')->name('legal.text');
 Route::get('preguntas_frecuentes', 'FrontController@faqs')->name('faqs.text');
