@@ -5,19 +5,18 @@
         <div>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                    <li class="breadcrumb-item"><a href="#">wcommerce</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Banners</li>
+                    <li class="breadcrumb-item"><a href="#">lantana</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Publicaciones</li>
                 </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Banners</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Publicaciones</h4>
         </div>
-        @if (auth()->user()->can('admin_access'))
-            <div class="d-none d-md-block">
-                <a href="{{ route('banners.create') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
-                    <i class="fas fa-plus"></i> Crear nuevo Banner
-                </a>
-            </div>
-        @endif
+
+        <div class="d-none d-md-block">
+            <a href="{{ route('posts.index') }}" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5">
+                <i class="fas fa-plus"></i> Volver
+            </a>
+        </div>
     </div>
 @endsection
 

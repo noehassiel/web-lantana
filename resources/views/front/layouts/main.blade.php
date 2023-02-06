@@ -2,12 +2,20 @@
 <html data-wf-page="638e73ff2d6baaa2efe74afb" data-wf-site="638e73fe2d6baa3a64e74af6">
 
 <head>
+
+    @php
+        $seo = App\Models\SEO::first();
+    @endphp
+
     <meta charset="utf-8">
-    <title>Lantana</title>
+    <title>{{ $seo->page_title ?? 'Lantana' }}</title>
     <meta content="Home explore" property="og:title">
     <meta content="Home explore" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
+    <meta content="{{ $seo->page_title ?? 'Lantana' }}" name="generator">
+    <meta name="description" content="{{ $seo->page_title ?? 'Lantana' }}">
+
+    <meta name="theme-color" content="{{ $seo->page_theme_color_hex ?? '#ffffff' }}">
 
     @stack('seo')
 

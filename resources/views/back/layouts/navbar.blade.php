@@ -92,6 +92,12 @@
             </li>
 
             <li class="nav-item">
+                <a href="{{ route('posts.index') }}" class="nav-link">
+                    <i data-feather="file-plus"></i> <span>Blog</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
                 <a href="{{ route('clients.index') }}" class="nav-link">
                     <i data-feather="users"></i> <span>Clientes</span>
                 </a>

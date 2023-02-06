@@ -53,14 +53,14 @@
                                 class="basic-tab-menu w-tab-menu">
 
                                 @foreach ($legales as $legal)
-                                    <a data-w-tab="Tab 3" class="tab-link one w-inline-block w-tab-link w--current">
+                                    <a data-w-tab="Tab 3" href="{{ route('legal.text', $legal->slug) }}"
+                                        class="tab-link one w-inline-block w-tab-link w--current">
                                         <div>{{ $legal->title }}</div>
 
-                                        @if (Request::is('legales/', {{ $legal->slug }}))
-                                            <h1>aa</h1>
+                                        @if (Request::is('legales/' . $legal->slug))
+                                            <div class="tab-indicator"></div>
                                         @endif
 
-                                        <div class="tab-indicator"></div>
                                     </a>
                                 @endforeach
 
@@ -85,57 +85,39 @@
                         </div>
                         <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963667-b0e74b11" class="quick-action-sidebar">
                             <!--
-                                                                                                                                                                      <div class="quick-action-box">
-                                                                                                                                                                        <a href="#" class="lesson-action-item w-inline-block">
-                                                                                                                                                                          <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366a-b0e74b11" class="play-icon">
-                                                                                                                                                                            <div class="tooltip-letter">?</div>
-                                                                                                                                                                          </div>
-                                                                                                                                                                          <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366b-b0e74b11">Submit a question</div>
-                                                                                                                                                                          <div class="hover-line">
-                                                                                                                                                                            <div class="hover-line-fill"></div>
-                                                                                                                                                                          </div>
-                                                                                                                                                                        </a>
-                                                                                                                                                                        <a href="#" class="lesson-action-item w-inline-block">
-                                                                                                                                                                          <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366e-b0e74b11" class="play-icon"><img
-                                                                                                                                                                              src="images/Icon_view.svg" loading="lazy" alt=""></div>
-                                                                                                                                                                          <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366f-b0e74b11">View on loom</div>
-                                                                                                                                                                          <div class="hover-line">
-                                                                                                                                                                            <div class="hover-line-fill"></div>
-                                                                                                                                                                          </div>
-                                                                                                                                                                        </a>
-                                                                                                                                                                        <a href="https://twitter.com/Tycreated" target="_blank"
-                                                                                                                                                                          class="lesson-action-item bottom w-inline-block">
-                                                                                                                                                                          <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963672-b0e74b11" class="play-icon"><img
-                                                                                                                                                                              src="images/twitter.svg" loading="lazy" alt=""></div>
-                                                                                                                                                                          <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963673-b0e74b11">Follow for updates</div>
-                                                                                                                                                                          <div class="hover-line">
-                                                                                                                                                                            <div class="hover-line-fill"></div>
-                                                                                                                                                                          </div>
-                                                                                                                                                                        </a>
-                                                                                                                                                                      </div>
-                                                                                                                                                                      -->
+                                                                                                                                                                                                              <div class="quick-action-box">
+                                                                                                                                                                                                                <a href="#" class="lesson-action-item w-inline-block">
+                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366a-b0e74b11" class="play-icon">
+                                                                                                                                                                                                                    <div class="tooltip-letter">?</div>
+                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366b-b0e74b11">Submit a question</div>
+                                                                                                                                                                                                                  <div class="hover-line">
+                                                                                                                                                                                                                    <div class="hover-line-fill"></div>
+                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                <a href="#" class="lesson-action-item w-inline-block">
+                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366e-b0e74b11" class="play-icon"><img
+                                                                                                                                                                                                                      src="images/Icon_view.svg" loading="lazy" alt=""></div>
+                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366f-b0e74b11">View on loom</div>
+                                                                                                                                                                                                                  <div class="hover-line">
+                                                                                                                                                                                                                    <div class="hover-line-fill"></div>
+                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                <a href="https://twitter.com/Tycreated" target="_blank"
+                                                                                                                                                                                                                  class="lesson-action-item bottom w-inline-block">
+                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963672-b0e74b11" class="play-icon"><img
+                                                                                                                                                                                                                      src="images/twitter.svg" loading="lazy" alt=""></div>
+                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963673-b0e74b11">Follow for updates</div>
+                                                                                                                                                                                                                  <div class="hover-line">
+                                                                                                                                                                                                                    <div class="hover-line-fill"></div>
+                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                              -->
                         </div>
                     </div>
                 </div>
-                <!--
-                                                                                                                                                                <div id="w-node-_04c12a87-7756-309b-9c89-05ffb62a3cae-b0e74b11" class="support-crumbs">
-                                                                                                                                                                  <div class="breadcrumbs">
-                                                                                                                                                                    <a id="w-node-_9007c468-d749-f2c3-26ac-b7ab5d8d9572-b0e74b11" href="index.html"
-                                                                                                                                                                      class="bread-crumb w-inline-block">
-                                                                                                                                                                      <div>Home</div>
-                                                                                                                                                                    </a><img src="images/chevron-right-dark24x242x.svg" loading="lazy" alt="" class="invert-small small">
-                                                                                                                                                                    <a id="w-node-_9007c468-d749-f2c3-26ac-b7ab5d8d9576-b0e74b11" href="support/engine.html"
-                                                                                                                                                                      class="bread-crumb w-inline-block">
-                                                                                                                                                                      <div>Support</div>
-                                                                                                                                                                    </a><img src="images/chevron-right-dark24x242x.svg" loading="lazy" alt="" class="invert-small small">
-                                                                                                                                                                    <a id="w-node-_9007c468-d749-f2c3-26ac-b7ab5d8d957a-b0e74b11" href="#" class="bread-crumb w-inline-block">
-                                                                                                                                                                      <div>Video</div>
-                                                                                                                                                                    </a>
-                                                                                                                                                                  </div>
-                                                                                                                                                                </div>
-                                                                                                                                                                -->
             </div>
-            <div id="w-node-_7508ba9f-50e9-26ab-dfb2-594a9f9be15c-b0e74b11" class="outline-top-fill large"></div>
         </div>
     </div>
 
