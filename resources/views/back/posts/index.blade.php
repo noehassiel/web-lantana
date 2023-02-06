@@ -47,7 +47,29 @@
                             <tbody>
                                 @foreach ($posts as $post)
                                     <tr>
+                                        <td>{{ $post->name }}</td>
+                                        <td>
+                                            <ul class="pl-0">
+                                                @foreach ($post->categories as $category)
+                                                    <li class="mb-1">
+                                                        <span class="badge text-bg-secondary px-3 py-2"
+                                                            style="background-color: {{ $category->color ?? '#000000' }}; color:white;">
+                                                            {{ $category->name }}
+                                                        </span>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            @if ($post->is_publish == 1)
+                                                <a href="" class="btn btn-sm btn-success">Publicado</a>
+                                            @else
+                                                <a href="" class="btn btn-sm btn-info">Borrador</a>
+                                            @endif
+                                        </td>
+                                        <td>
 
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -64,7 +86,10 @@
                     @foreach ($categories as $category)
                         <ul>
                             <li>
-                                <span class="badge text-bg-secondary" style="">{{ $category->name }}</span>
+                                <span class="badge text-bg-secondary px-3 py-2"
+                                    style="background-color: {{ $category->color ?? '#000000' }}; color:white;">
+                                    {{ $category->name }}
+                                </span>
                             </li>
                         </ul>
                     @endforeach
@@ -76,18 +101,26 @@
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-12 mb-3">
-                            <label class="form-label">Nombre de categoría<span class="text-danger">*</span></label>
+                            <label class="form-label">Nombre de categoría <span class="text-danger">*</span></label>
                             <input class="form-control " name="name" required="" type="text">
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label class="form-label">Color</label>
-                            <input class="form-control " name="color" required="" type="hex">
+                            <label class="form-label">Color <span class="text-danger">*</span></label>
+                            <input class="form-control " name="color" required="" type="color">
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Prioridad</label>
-                            <input class="form-control " name="color" required="" type="text">
+                            <select name="priority" class="form-control" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
                         </div>
 
                         <div class="col-md-12">

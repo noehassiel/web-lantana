@@ -31,9 +31,8 @@ class ProjectController extends Controller
     {
         //Validar
         $this->validate($request, array(
-            'title' => 'unique:banners|required|max:255',
-            'subtitle' => 'nullable',
-            'main_picture' => 'sometimes|min:10|max:2100',
+            'title' => 'unique:projects|required|max:255',
+            'main_picture' => 'required|min:10|max:2100',
         ));
 
         $project = new Project;

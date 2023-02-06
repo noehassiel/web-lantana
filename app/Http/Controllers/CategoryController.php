@@ -39,9 +39,10 @@ class CategoryController extends Controller
         $category->name = $request->name;
         if (empty($check_if_exists)) {
             $category->slug = Str::slug($request->name, '-');
+            $category->color = $request->color;
+            $category->priority = $request->priority;
         } else {
             Session::flash('error', 'Esa categoría ya existe.');
-
             // Enviar a vista
             return redirect()->back();
         }

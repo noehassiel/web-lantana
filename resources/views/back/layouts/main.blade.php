@@ -48,6 +48,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/wk.custom.css') }}">
 
     @stack('stylesheets')
+
+    @stack('styles')
 </head>
 
 <body>
