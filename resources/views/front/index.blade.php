@@ -221,7 +221,7 @@
                             @endforeach
                         @endif
                     </div>
-                    @if ($banners->count() != 0)
+                    @if ($banners->count() > 1)
                         <div data-w-id="1637b49a-7f68-ec54-42e6-368c2d0c2e07"
                             class="right-arrow left w-slider-arrow-left"><img
                                 src="{{ asset('img/arrow-left24x242x.svg') }}" loading="lazy" alt=""
@@ -1005,11 +1005,10 @@
                                     </div>
                                 </div>
                                 <div class="left-intro">
-                                    <h1 id="w-node-_12c0f9e7-7324-c69f-9722-08ece29fb293-efe74afb">Noticias / Entradas de
-                                        blog</h1>
+                                    <h1 id="w-node-_12c0f9e7-7324-c69f-9722-08ece29fb293-efe74afb">Publicaciones</h1>
                                 </div>
                             </div>
-                            <a href="#" id="w-node-bbcb602a-ad0e-9075-fa18-3e1a9078c8d5-efe74afb"
+                            <a href="{{ route('allPost') }}" id="w-node-bbcb602a-ad0e-9075-fa18-3e1a9078c8d5-efe74afb"
                                 class="outline-button w-inline-block">
                                 <div id="w-node-bbcb602a-ad0e-9075-fa18-3e1a9078c8d6-efe74afb" class="button-text">Ver
                                     todos

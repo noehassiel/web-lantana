@@ -63,6 +63,8 @@ class PostController extends Controller
 
         $post->time = $request->time;
 
+        $post->publish_date = $request->date;
+
         $post->save();
 
         // Guardar Categorías

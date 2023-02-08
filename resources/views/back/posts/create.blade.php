@@ -75,6 +75,11 @@
                             <input type="text" class="form-control" name="time" required="">
                         </div>
 
+                        <div class="form-group col-md-12">
+                            <label for="">Día de publicación <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" name="date" required="">
+                        </div>
+
                         <div class="col-md-12 mb-5">
                             <div class="form-check">
                                 <input class="form-check-input" name="is_publish" type="checkbox" value="1"

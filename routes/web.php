@@ -155,11 +155,24 @@ Route::get('sobre_nosotros', [
     'as' => 'about',
 ]);
 
-
+//Proyectos
 Route::get('/proyectos/{slug}', [
     'uses' => 'FrontController@detail',
     'as' => 'detail',
 ])->where('slug', '[\w\d\-\_]+');
+
+
+//Blog
+Route::get('/publicacion/{slug}', [
+    'uses' => 'FrontController@detailPost',
+    'as' => 'postDetail'
+])->where('slug', '[\w\d\-\_]+');
+
+Route::get('/publicaciones', [
+    'uses' => 'FrontController@posts',
+    'as' => 'allPost',
+]);
+
 
 /* Newsletter */
 Route::post('registro-newsletter', 'FrontController@newsletter')->name('newsletter_front.store');

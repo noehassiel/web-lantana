@@ -86,7 +86,8 @@
                                 style="-webkit-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -72px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="template-hover-top">
                                 <a data-w-id="47de4d66-b56c-51b5-acb3-009a71bef1e1" id="share_{{ $post->id }}"
-                                    href="#" data-clipboard-text="{{ $post->name }}"
+                                    href="javascript:void(0)"
+                                    data-clipboard-text="{{ route('postDetail', $post->slug) }}"
                                     class="icon-link
                                     w-inline-block"><img
                                         src="{{ asset('img/Icon_copyLight.svg') }}" loading="lazy" alt="">
@@ -98,7 +99,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <a data-w-id="87cb197b-c0bb-3ff6-1eec-6bab3d345991" href="#"
+                            <a data-w-id="87cb197b-c0bb-3ff6-1eec-6bab3d345991"
+                                href="{{ route('postDetail', $post->slug) }}"
                                 class="template-screen-link w-inline-block">
                                 <div data-w-id="87cb197b-c0bb-3ff6-1eec-6bab3d345992" class="cursur-wrapper">
                                     <div class="card-cursur on">
@@ -123,7 +125,7 @@
                         publicación copiada a
                         portapapeles</small>
 
-                    <a href="#" class="card-info w-inline-block">
+                    <a href="{{ route('postDetail', $post->slug) }}" class="card-info w-inline-block">
                         <div class="card-info-top">
                             <h3>{{ $post->name }}</h3>
                             <div id="w-node-_87cb197b-c0bb-3ff6-1eec-6bab3d34599d-efe74afb" class="price">
@@ -174,9 +176,9 @@
         $(document).ready(function() {
             $('#share_{{ $post->id }}').on('click', function() {
 
-                var url = $(this).attr('data-url');
+                $('#alert_{{ $post->id }}').fadeIn();
 
-                document.execCommand("url ");
+                $('#alert_{{ $post->id }}').delay(3000).fadeOut();
 
             });
         });

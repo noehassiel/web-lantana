@@ -15,6 +15,8 @@ class AddReadingTimeToPostsTable extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->string('time',)->after('is_publish')->nullable();
+
+            $table->date('publish_date')->after('time')->nullable();
         });
     }
 
@@ -27,6 +29,7 @@ class AddReadingTimeToPostsTable extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->dropColumn('time');
+            $table->dropColumn('publish_date');
         });
     }
 }
