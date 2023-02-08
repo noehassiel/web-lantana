@@ -49,7 +49,7 @@
                                     <tr>
                                         <td>{{ $post->name }}</td>
                                         <td>
-                                            <ul class="pl-0">
+                                            <ul class="pl-0" style="list-style: none">
                                                 @foreach ($post->categories as $category)
                                                     <li class="mb-1">
                                                         <span class="badge text-bg-secondary px-3 py-2"
@@ -62,13 +62,46 @@
                                         </td>
                                         <td>
                                             @if ($post->is_publish == 1)
-                                                <a href="" class="btn btn-sm btn-success">Publicado</a>
+                                                <a href="" class="text-success btn-link">
+                                                    <i data-feather="check"></i> Publicado</a>
                                             @else
-                                                <a href="" class="btn btn-sm btn-info">Borrador</a>
+                                                <a href="" class="text-danger btn-link">
+                                                    <i data-feather="x-circle"></i>Borrador
+                                                </a>
                                             @endif
                                         </td>
-                                        <td>
+                                        <td class="d-flex">
+                                            <a href="{{ route('posts.show', $post->id) }}"
+                                                class="btn btn-link text-dark px-1 py-0" data-toggle="tooltip"
+                                                data-original-title="Ver Detalle">
+                                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                            </a>
 
+                                            <a href="{{ route('posts.edit', $post->id) }}"
+                                                class="btn btn-link text-dark px-1 py-0" data-toggle="tooltip"
+                                                data-original-title="Editar">
+                                                <i class="fa fa-edit" aria-hidden="true"></i>
+                                            </a>
+
+                                            {{-- 
+                                            <form method="POST" action="{{ route('posts.status', $post->id) }}">
+                                                {{ csrf_field() }}
+                                                <button type="submit" class="btn btn-link text-dark px-1 py-0"
+                                                    data-toggle="tooltip" data-original-title="Cambiar estado">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </button>
+                                            </form>
+                                             --}}
+
+                                            <form method="POST" action="{{ route('posts.destroy', $post->id) }}">
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+
+                                                <button type="submit" class="btn btn-link text-danger px-1 py-0"
+                                                    data-toggle="tooltip" data-original-title="Eliminar Banner">
+                                                    <i class="fas fa-trash" aria-hidden="true"></i>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -84,7 +117,7 @@
                 <div class="card card-body mb-4">
                     <h4>Lista de Categorías</h4>
                     @foreach ($categories as $category)
-                        <ul>
+                        <ul style="list-style: none" class="pl-0">
                             <li>
                                 <span class="badge text-bg-secondary px-3 py-2"
                                     style="background-color: {{ $category->color ?? '#000000' }}; color:white;">

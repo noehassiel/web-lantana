@@ -93,7 +93,7 @@
 
             <li class="nav-item">
                 <a href="{{ route('posts.index') }}" class="nav-link">
-                    <i data-feather="file-plus"></i> <span>Blog</span>
+                    <i data-feather="book-open"></i> <span>Blog</span>
                 </a>
             </li>
 

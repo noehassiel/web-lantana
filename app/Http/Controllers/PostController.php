@@ -61,6 +61,8 @@ class PostController extends Controller
 
         $post->is_publish = $request->is_publish;
 
+        $post->time = $request->time;
+
         $post->save();
 
         // Guardar Categorías
@@ -82,7 +84,7 @@ class PostController extends Controller
         }
 
         // Mensaje de session
-        Session::flash('success', 'Se creo el proyecto con exito.');
+        Session::flash('success', 'Se creo la publicación con exito.');
 
         // Enviar a vista
         return redirect()->route('posts.show', $post->id);
@@ -100,11 +102,18 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
     }
 
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+
+        $post->delete();
+
+        // Mensaje de session
+        Session::flash('success', 'Se eliminó la publicación con exito.');
+
+        return redirect()->back();
     }
 }

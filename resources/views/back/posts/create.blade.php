@@ -70,6 +70,11 @@
                             </select>
                         </div>
 
+                        <div class="form-group col-md-12">
+                            <label for="">Tiempo de lectura (minutos) <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="time" required="">
+                        </div>
+
                         <div class="col-md-12 mb-5">
                             <div class="form-check">
                                 <input class="form-check-input" name="is_publish" type="checkbox" value="1"
