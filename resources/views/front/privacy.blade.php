@@ -84,36 +84,6 @@
                             </div>
                         </div>
                         <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963667-b0e74b11" class="quick-action-sidebar">
-                            <!--
-                                                                                                                                                                                                              <div class="quick-action-box">
-                                                                                                                                                                                                                <a href="#" class="lesson-action-item w-inline-block">
-                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366a-b0e74b11" class="play-icon">
-                                                                                                                                                                                                                    <div class="tooltip-letter">?</div>
-                                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366b-b0e74b11">Submit a question</div>
-                                                                                                                                                                                                                  <div class="hover-line">
-                                                                                                                                                                                                                    <div class="hover-line-fill"></div>
-                                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                                </a>
-                                                                                                                                                                                                                <a href="#" class="lesson-action-item w-inline-block">
-                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366e-b0e74b11" class="play-icon"><img
-                                                                                                                                                                                                                      src="images/Icon_view.svg" loading="lazy" alt=""></div>
-                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-49457896366f-b0e74b11">View on loom</div>
-                                                                                                                                                                                                                  <div class="hover-line">
-                                                                                                                                                                                                                    <div class="hover-line-fill"></div>
-                                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                                </a>
-                                                                                                                                                                                                                <a href="https://twitter.com/Tycreated" target="_blank"
-                                                                                                                                                                                                                  class="lesson-action-item bottom w-inline-block">
-                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963672-b0e74b11" class="play-icon"><img
-                                                                                                                                                                                                                      src="images/twitter.svg" loading="lazy" alt=""></div>
-                                                                                                                                                                                                                  <div id="w-node-_8cceddb8-afa4-98ab-b851-494578963673-b0e74b11">Follow for updates</div>
-                                                                                                                                                                                                                  <div class="hover-line">
-                                                                                                                                                                                                                    <div class="hover-line-fill"></div>
-                                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                                </a>
-                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                              -->
                         </div>
                     </div>
                 </div>
@@ -188,9 +158,8 @@
                         </div>
                         <div class="template-slider">
                             <div data-delay="4000" data-animation="slide" class="cards-slider w-slider"
-                                data-autoplay="false" data-easing="ease" data-hide-arrows="false"
-                                data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
-                                data-duration="500" data-infinite="true">
+                                data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false"
+                                data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
                                 <div class="cards-mask medium w-slider-mask">
 
                                     @foreach ($projects as $project)

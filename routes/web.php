@@ -161,6 +161,11 @@ Route::get('/proyectos/{slug}', [
     'as' => 'detail',
 ])->where('slug', '[\w\d\-\_]+');
 
+Route::get('/proyectos', [
+    'uses' => 'FrontController@projects',
+    'as' => 'allProjects',
+]);
+
 
 //Blog
 Route::get('/publicacion/{slug}', [
@@ -171,6 +176,11 @@ Route::get('/publicacion/{slug}', [
 Route::get('/publicaciones', [
     'uses' => 'FrontController@posts',
     'as' => 'allPost',
+]);
+
+Route::get('/publicaciones/{category_slug}', [
+    'uses' => 'FrontController@category',
+    'as' => 'category',
 ]);
 
 

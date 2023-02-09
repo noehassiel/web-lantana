@@ -367,16 +367,45 @@
                                                             elit.</div>
                                                     </div>
                                                 </a>
+
+                                                @php
+                                                    $projects = App\Models\Project::where('is_active', 1)->get();
+                                                @endphp
+
+                                                @if ($projects->count() != 0)
+                                                    <a href="{{ route('allProjects') }}"
+                                                        class="menu-link w-inline-block">
+                                                        <div class="menu-hover-background"></div>
+                                                        <div class="menu-list-item">
+                                                            <h3 id="w-node-_450dc799-1147-dee2-a97c-d376f08163f8-f5164266"
+                                                                class="menu-title">
+                                                                Proyectos</h3>
+                                                            <div id="w-node-_450dc799-1147-dee2-a97c-d376f08163fa-f5164266"
+                                                                class="body-display small">Ve la lista de todos
+                                                                nuestros proyectos y clientes.</div>
+                                                        </div>
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
                                 </nav>
                             </div>
-                            <!--
-                <a href="#" class="nav-link w-inline-block">
-                  <div>Contácto</div>
-                </a>
-                -->
+
+                            @php
+                                $today = Carbon\Carbon::now()->format('Y-m-d');
+                                
+                                $posts = App\Models\Post::where('is_publish', 1)
+                                    ->where('publish_date', '<=', $today)
+                                    ->get();
+                            @endphp
+
+                            @if ($posts->count() != 0)
+                                <a href="{{ route('allPost') }}" class="nav-link w-inline-block">
+                                    <div>Blog</div>
+                                </a>
+                            @endif
+
                         </div>
                     </nav>
                 </div>

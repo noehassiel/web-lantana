@@ -79,38 +79,49 @@
             <div class="stacked-intro">
                 <div class="subtitle large">Sections</div>
                 <div id="w-node-_50e2a46f-5201-3825-251a-957aa0496640-130983d2" class="footer-list">
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>One</div>
+                    <a href="{{ route('index') }}" class="footer-list-item w-inline-block">
+                        <div>Inicio</div>
                         <div class="hover-line">
                             <div class="hover-line-fill"></div>
                         </div>
                         <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
                                 alt="" class="invert-small"></div>
                     </a>
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>Two</div>
+                    <a href="{{ route('about') }}" class="footer-list-item w-inline-block">
+                        <div>Sobre Nosotros</div>
                         <div class="hover-line">
                             <div class="hover-line-fill"></div>
                         </div>
                         <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
                                 alt="" class="invert-small"></div>
                     </a>
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>Three</div>
+                    <a href="{{ route('allProjects') }}" class="footer-list-item w-inline-block">
+                        <div>Proyectos</div>
                         <div class="hover-line">
                             <div class="hover-line-fill"></div>
                         </div>
                         <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
                                 alt="" class="invert-small"></div>
                     </a>
-                    <a href="#" class="footer-list-item w-inline-block">
-                        <div>Four</div>
-                        <div class="hover-line">
-                            <div class="hover-line-fill"></div>
-                        </div>
-                        <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg" loading="lazy"
-                                alt="" class="invert-small"></div>
-                    </a>
+
+                    @php
+                        $today = Carbon\Carbon::now()->format('Y-m-d');
+                        
+                        $posts = App\Models\Post::where('is_publish', 1)
+                            ->where('publish_date', '<=', $today)
+                            ->get();
+                    @endphp
+
+                    @if ($posts->count() != 0)
+                        <a href="{{ route('allPost') }}" class="footer-list-item w-inline-block">
+                            <div>Blog</div>
+                            <div class="hover-line">
+                                <div class="hover-line-fill"></div>
+                            </div>
+                            <div class="arrow-icon-wrapper"><img src="images/arrow-right-final24x242x.svg"
+                                    loading="lazy" alt="" class="invert-small"></div>
+                        </a>
+                    @endif
                 </div>
             </div>
             <div class="stacked-intro">

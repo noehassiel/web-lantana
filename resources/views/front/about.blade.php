@@ -147,16 +147,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="w-node-a0b597b7-8020-3311-9d51-f34e22cb8886-18e74aff" class="breadcrumbs">
-                    <a id="w-node-a0b597b7-8020-3311-9d51-f34e22cb8887-18e74aff" href="{{ route('index') }}"
-                        class="bread-crumb light w-inline-block">
-                        <div>Home</div>
-                    </a><img src="images/chevron-right24x242x.svg" loading="lazy" alt="" class="invert-icon">
-                    <a id="w-node-a0b597b7-8020-3311-9d51-f34e22cb888f-18e74aff" href="{{ route('about') }}"
-                        aria-current="page" class="bread-crumb light w-inline-block w--current">
-                        <div>About</div>
-                    </a>
-                </div>
                 <a href="#" id="w-node-c5166a44-190d-947b-f26d-59b4c555b7b0-c555b7b0"
                     data-w-id="c5166a44-190d-947b-f26d-59b4c555b7b0" class="half-circle-scroll-link w-inline-block">
                     <div class="scroll-link-outline">
@@ -192,138 +182,138 @@
                             <div class="testimonial-strip-wrapper tilted">
                                 <div class="testimonial-background large">
                                     <div class="testimonial-image-strip one">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip two">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip three">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip four">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                 </div>
                                 <div class="testimonial-background large">
                                     <div class="testimonial-image-strip one">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip two">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip three">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip four">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                 </div>
                                 <div class="testimonial-background large">
                                     <div class="testimonial-image-strip one">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip two">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip three">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
                                     <div class="testimonial-image-strip four">
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
-                                        <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
+                                        <div class="looping-screen small"><img src="img/Rythm-comp.jpg" loading="lazy"
                                                 srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
                                                 sizes="100vw" alt="" class="looping-image"></div>
                                     </div>
@@ -392,81 +382,81 @@
         </div>
     </div>
     <!--
-          <div class="section grey no-top-padding wf-section">
-            <div class="grid-wrapper">
-              <div
-                data-poster-url="https://uploads-ssl.webflow.com/60d610589ff1af7f8d213183/60db6f54db417d7d6bf992c6_Video002-poster-00001.jpg"
-                data-video-urls="videos/Video002-transcode.mp4,videos/Video002-transcode.webm" data-autoplay="true"
-                data-loop="true" data-wf-ignore="true" id="w-node-_576c65c0-d79e-5030-54a9-02dbdb68332e-18e74aff"
-                class="background-video w-background-video w-background-video-atom"><video
-                  id="576c65c0-d79e-5030-54a9-02dbdb68332e-video" autoplay="" loop=""
-                  style="background-image:url(&quot;https://uploads-ssl.webflow.com/60d610589ff1af7f8d213183/60db6f54db417d7d6bf992c6_Video002-poster-00001.jpg&quot;)"
-                  muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                  <source src="videos/Video002-transcode.mp4" data-wf-ignore="true">
-                  <source src="videos/Video002-transcode.webm" data-wf-ignore="true">
-                </video>
-                <div class="overlay gradient dark"></div>
-              </div>
-              <div id="w-node-_382e1671-2172-cb2f-6660-b9c02e090db0-18e74aff" class="large-video-cover">
-                <div class="video-box large">
-                  <div class="left-corner">
-                    <div class="corner-fill"></div>
-                    <div class="corner-fill horizontal"></div>
-                  </div>
-                  <div class="left-corner bottom">
-                    <div class="corner-fill bottom"></div>
-                    <div class="corner-fill horizontal bottom"></div>
-                  </div>
-                  <div class="left-corner bottom-right">
-                    <div class="corner-fill bottom-right"></div>
-                    <div class="corner-fill horizontal bottom-right"></div>
-                  </div>
-                  <div class="left-corner right">
-                    <div class="corner-fill right"></div>
-                    <div class="corner-fill horizontal right"></div>
-                  </div>
-                  <div class="hero-intro small">
-                    <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb0f-18e74aff" class="subtitle-intro">
-                      <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb10-18e74aff" class="subtitle-line left">
-                        <div class="solid-subtitle-line"></div>
+                  <div class="section grey no-top-padding wf-section">
+                    <div class="grid-wrapper">
+                      <div
+                        data-poster-url="https://uploads-ssl.webflow.com/60d610589ff1af7f8d213183/60db6f54db417d7d6bf992c6_Video002-poster-00001.jpg"
+                        data-video-urls="videos/Video002-transcode.mp4,videos/Video002-transcode.webm" data-autoplay="true"
+                        data-loop="true" data-wf-ignore="true" id="w-node-_576c65c0-d79e-5030-54a9-02dbdb68332e-18e74aff"
+                        class="background-video w-background-video w-background-video-atom"><video
+                          id="576c65c0-d79e-5030-54a9-02dbdb68332e-video" autoplay="" loop=""
+                          style="background-image:url(&quot;https://uploads-ssl.webflow.com/60d610589ff1af7f8d213183/60db6f54db417d7d6bf992c6_Video002-poster-00001.jpg&quot;)"
+                          muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                          <source src="videos/Video002-transcode.mp4" data-wf-ignore="true">
+                          <source src="videos/Video002-transcode.webm" data-wf-ignore="true">
+                        </video>
+                        <div class="overlay gradient dark"></div>
                       </div>
-                      <div class="subtitle light">Free feedback &amp; Support</div>
-                      <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb14-18e74aff" class="subtitle-line">
-                        <div class="solid-subtitle-line"></div>
-                      </div>
-                    </div>
-                    <div class="stacked-intro">
-                      <h1 class="xxl-heading">Submit your own question</h1>
-                      <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb19-18e74aff" class="medium-width">
-                        <div class="body-display light">Free webflow training on skills and processes to help you build
-                          memorable sites that attract new clients and customers.</div>
-                      </div>
-                    </div>
-                    <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e3-f4ebe4e3"
-                      data-w-id="795f3e77-169a-6507-2849-968bf4ebe4e3" class="video-button-wrapper">
-                      <div data-w-id="795f3e77-169a-6507-2849-968bf4ebe4e4" class="video-button">
-                        <div class="video-button-fill"><img src="images/playbuttonicon24x242x.svg" loading="lazy" alt=""
-                            class="video-icon"></div>
-                        <div class="solid-video-button-outline">
-                          <div class="video-button-outline">
-                            <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e9-f4ebe4e3" class="video-outline-wrapper top">
-                              <div class="video-outline"></div>
+                      <div id="w-node-_382e1671-2172-cb2f-6660-b9c02e090db0-18e74aff" class="large-video-cover">
+                        <div class="video-box large">
+                          <div class="left-corner">
+                            <div class="corner-fill"></div>
+                            <div class="corner-fill horizontal"></div>
+                          </div>
+                          <div class="left-corner bottom">
+                            <div class="corner-fill bottom"></div>
+                            <div class="corner-fill horizontal bottom"></div>
+                          </div>
+                          <div class="left-corner bottom-right">
+                            <div class="corner-fill bottom-right"></div>
+                            <div class="corner-fill horizontal bottom-right"></div>
+                          </div>
+                          <div class="left-corner right">
+                            <div class="corner-fill right"></div>
+                            <div class="corner-fill horizontal right"></div>
+                          </div>
+                          <div class="hero-intro small">
+                            <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb0f-18e74aff" class="subtitle-intro">
+                              <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb10-18e74aff" class="subtitle-line left">
+                                <div class="solid-subtitle-line"></div>
+                              </div>
+                              <div class="subtitle light">Free feedback &amp; Support</div>
+                              <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb14-18e74aff" class="subtitle-line">
+                                <div class="solid-subtitle-line"></div>
+                              </div>
                             </div>
-                            <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4eb-f4ebe4e3"
-                              class="video-outline-wrapper bottom">
-                              <div class="video-outline bottom"></div>
+                            <div class="stacked-intro">
+                              <h1 class="xxl-heading">Submit your own question</h1>
+                              <div id="w-node-_625fff26-7711-e630-35b7-9874c53bbb19-18e74aff" class="medium-width">
+                                <div class="body-display light">Free webflow training on skills and processes to help you build
+                                  memorable sites that attract new clients and customers.</div>
+                              </div>
+                            </div>
+                            <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e3-f4ebe4e3"
+                              data-w-id="795f3e77-169a-6507-2849-968bf4ebe4e3" class="video-button-wrapper">
+                              <div data-w-id="795f3e77-169a-6507-2849-968bf4ebe4e4" class="video-button">
+                                <div class="video-button-fill"><img src="images/playbuttonicon24x242x.svg" loading="lazy" alt=""
+                                    class="video-icon"></div>
+                                <div class="solid-video-button-outline">
+                                  <div class="video-button-outline">
+                                    <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4e9-f4ebe4e3" class="video-outline-wrapper top">
+                                      <div class="video-outline"></div>
+                                    </div>
+                                    <div id="w-node-_795f3e77-169a-6507-2849-968bf4ebe4eb-f4ebe4e3"
+                                      class="video-outline-wrapper bottom">
+                                      <div class="video-outline bottom"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="light-sction-cover"></div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="light-sction-cover"></div>
-          </div>
-          -->
+                  -->
     <div class="section no-top-padding wf-section">
         <div class="grid-wrapper">
             <div id="w-node-_1f1ab4a7-810e-cc31-9607-d97ad8dfd68b-18e74aff" class="stacked-content">
@@ -556,16 +546,16 @@
                     condimen
                     nunc ut, efficitur.</h2>
                 <!--
-                <div id="w-node-_5889f0dd-6bcb-289d-8187-f852aff4c2ec-18e74aff" class="testimonial-client">
-                  <div class="client-avatar">
-                    <div class="avatar"></div>
-                  </div>
-                  <div id="w-node-_5889f0dd-6bcb-289d-8187-f852aff4c2ef-18e74aff" class="testimonial-name">
-                    <h4>Tyler Hughey</h4>
-                    <div class="subtitle light">AKA @tycreated</div>
-                  </div>
-                </div>
-                -->
+                        <div id="w-node-_5889f0dd-6bcb-289d-8187-f852aff4c2ec-18e74aff" class="testimonial-client">
+                          <div class="client-avatar">
+                            <div class="avatar"></div>
+                          </div>
+                          <div id="w-node-_5889f0dd-6bcb-289d-8187-f852aff4c2ef-18e74aff" class="testimonial-name">
+                            <h4>Tyler Hughey</h4>
+                            <div class="subtitle light">AKA @tycreated</div>
+                          </div>
+                        </div>
+                        -->
             </div>
         </div>
         <div class="testimonial-strip-wrapper">

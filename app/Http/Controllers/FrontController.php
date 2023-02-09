@@ -8,6 +8,7 @@ use App\Models\Post;
 use App\Models\Banner;
 use App\Models\Project;
 
+use App\Models\Category;
 use App\Models\LegalText;
 use Illuminate\Http\Request;
 
@@ -67,14 +68,26 @@ class FrontController extends Controller
         $n_min = Carbon::parse($next_post->publish_date)->diffInMinutes($today);
         $n_sec = Carbon::parse($next_post->publish_date)->diffInSeconds($today);
 
-
-
-        return view('front.templates')
+        return view('front.posts')
             ->with('posts', $posts)
             ->with('next_post', $next_post)
             ->with('n_days', $n_days)
             ->with('n_hours', $n_hours)
             ->with('n_min', $n_min)
             ->with('n_sec', $n_sec);
+    }
+
+    public function category($category_slug)
+    {
+        $today = Carbon::now()->format('Y-m-d');
+        $category = Category::where('slug', $category_slug)->firstOrFail();
+
+        $posts = Post::where('is_publish', 1)->whereDate('publish_date', '<=', $today)->whereHas('categories', function ($query) use ($category) {
+            $query->where('category_id', $category->id);
+        })->get();
+
+        return view('front.posts')
+            ->with('category', $category)
+            ->with('posts', $posts);
     }
 }
