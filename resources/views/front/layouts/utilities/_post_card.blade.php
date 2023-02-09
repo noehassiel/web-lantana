@@ -158,7 +158,7 @@
                                 <div id="w-node-_87cb197b-c0bb-3ff6-1eec-6bab3d3459b1-efe74afb" class="subtitle">
                                 </div>
                                 <div id="w-node-_87cb197b-c0bb-3ff6-1eec-6bab3d3459b2-efe74afb" class="subtitle">
-                                    {{ $post->time }}
+                                    {{ $post->time }} min.
                                 </div>
                             </div>
                         </div>

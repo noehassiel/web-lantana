@@ -19,12 +19,6 @@ use Illuminate\Http\Request;
 
 class IntegrationController extends Controller
 {
-    private $notification;
-
-    public function __construct()
-    {
-        $this->notification = new NotificationController;
-    }
 
     public function index()
     {

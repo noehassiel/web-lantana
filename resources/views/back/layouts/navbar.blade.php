@@ -81,7 +81,6 @@
                 <a href="" class="nav-link"><i data-feather="image"></i> <span> Marketing</span></a>
                 <ul>
                     <li><a href="{{ route('banners.index') }}">Banners</a></li>
-                    <li><a href="{{ route('popups.index') }}">Pop-ups</a></li>
                 </ul>
             </li>
 
@@ -97,17 +96,20 @@
                 </a>
             </li>
 
+            {{-- 
             <li class="nav-item">
                 <a href="{{ route('clients.index') }}" class="nav-link">
                     <i data-feather="users"></i> <span>Clientes</span>
                 </a>
             </li>
+             
 
             <li class="nav-item">
                 <a href="{{ route('newsletter.index') }}" class="nav-link">
                     <i data-feather="file-text"></i> <span>Newsletter</span>
                 </a>
             </li>
+            --}}
 
             <li class="nav-label mg-t-100">Configuración</li>
             <li class="nav-item">
