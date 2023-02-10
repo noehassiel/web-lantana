@@ -348,14 +348,14 @@
                                                     <div class="menu-hover-background"></div>
                                                     <div class="menu-list-item">
                                                         <h3 id="w-node-_0de0d0d6-587b-4d45-287a-5260cd848a2d-f5164266"
-                                                            class="menu-title">Acerca
-                                                            de
+                                                            class="menu-title">Sobre Nosotros
                                                         </h3>
                                                         <div id="w-node-_0de0d0d6-587b-4d45-287a-5260cd848a2f-f5164266"
-                                                            class="body-display small">Lorem ipsum dolor sit amet, con
-                                                            elit.</div>
+                                                            class="body-display small">Conóce un poco más de
+                                                            Corporación Lantana.</div>
                                                     </div>
                                                 </a>
+                                                {{-- 
                                                 <a href="#" class="menu-link w-inline-block">
                                                     <div class="menu-hover-background"></div>
                                                     <div class="menu-list-item">
@@ -367,6 +367,7 @@
                                                             elit.</div>
                                                     </div>
                                                 </a>
+                                                 --}}
 
                                                 @php
                                                     $projects = App\Models\Project::where('is_active', 1)->get();

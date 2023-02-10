@@ -35,10 +35,12 @@ class FrontController extends Controller
 
     public function detail($slug)
     {
-        $project = Project::where('slug', $slug);
+        $project = Project::where('slug', $slug)->first();
+        $projects = Project::where('is_active', true)->where('name', '!=', $project->name)->orderBy('created_at', 'asc')->get()->take(6);
 
-        return view('front.detail_lesson')
-            ->with('project', $project);
+        return view('front.detail_project')
+            ->with('project', $project)
+            ->with('projects', $projects);
     }
 
     public function legalText($slug)
@@ -63,10 +65,17 @@ class FrontController extends Controller
 
         $next_post = Post::where('is_publish', 1)->where('publish_date', '>', $today)->first();
 
-        $n_days = Carbon::parse($next_post->publish_date)->diffInDays($today);
-        $n_hours = Carbon::parse($next_post->publish_date)->diffInHours($today);
-        $n_min = Carbon::parse($next_post->publish_date)->diffInMinutes($today);
-        $n_sec = Carbon::parse($next_post->publish_date)->diffInSeconds($today);
+        $n_days = 0;
+        $n_hours = 0;
+        $n_min = 0;
+        $n_sec = 0;
+
+        if (!empty($next_post)) {
+            $n_days = Carbon::parse($next_post->publish_date)->diffInDays($today);
+            $n_hours = Carbon::parse($next_post->publish_date)->diffInHours($today);
+            $n_min = Carbon::parse($next_post->publish_date)->diffInMinutes($today);
+            $n_sec = Carbon::parse($next_post->publish_date)->diffInSeconds($today);
+        }
 
         return view('front.posts')
             ->with('posts', $posts)
@@ -75,6 +84,18 @@ class FrontController extends Controller
             ->with('n_hours', $n_hours)
             ->with('n_min', $n_min)
             ->with('n_sec', $n_sec);
+    }
+
+    public function detailPost($slug)
+    {
+        $today = Carbon::now()->format('Y-m-d');
+        $post = Post::where('slug', $slug)->first();
+
+        $posts = Post::where('is_publish', true)->where('name', '!=', $post->name)->where('publish_date', '<=', $today)->orderBy('created_at', 'asc')->get()->take(6);
+
+        return view('front.detail_post')
+            ->with('post', $post)
+            ->with('posts', $posts);
     }
 
     public function category($category_slug)

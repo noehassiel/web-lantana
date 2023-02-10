@@ -167,6 +167,7 @@ Route::get('/proyectos', [
 ]);
 
 
+
 //Blog
 Route::get('/publicacion/{slug}', [
     'uses' => 'FrontController@detailPost',
