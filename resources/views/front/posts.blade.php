@@ -23,7 +23,7 @@
                 </div>
                 <a href="javascript: history.go(-1)" id="w-node-_85cdbfa1-c333-d96c-213c-dfc2eee146e8-07e74baa"
                     class="outline-button light hero-button w-inline-block">
-                    <div id="w-node-_85cdbfa1-c333-d96c-213c-dfc2eee146e9-07e74baa" class="button-text">Regresar</div>
+                    <div id="w-node-_85cdbfa1-c333-d96c-213c-dfc2eee146e9-07e74baa" class="button-text">Volver</div>
                     <div id="w-node-_85cdbfa1-c333-d96c-213c-dfc2eee146eb-07e74baa" class="button-hover-outline left">
                         <div class="solid-button-outline light"></div>
                     </div>
@@ -46,8 +46,13 @@
                 </a>
             </div>
         </div>
-        <div class="overlay light"></div>
-        <div class="overlay gradient dark"></div>
+        <div class="slider-background-wrapper hero-wrapper">
+            <div class="slider-background">
+                <div class="hero-slide-background two" style="background-image: url({{ asset('img/001.jpeg') }})">
+                    <div class="overlay gradient"></div>
+                </div>
+            </div>
+        </div>
     </div>
     @if (!empty($next_post))
         <div class="section grey no-padding wf-section">

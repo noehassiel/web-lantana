@@ -4,7 +4,7 @@
     <div class="flyout first">
         <div class="grid-wrapper">
             <div data-w-id="1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea26a" class="close-flyout">
-                <div class="close-cursur"><img src="images/Icon_multiply.svg" loading="lazy" alt="" class="close-icon">
+                <div class="close-cursur"><img src="img/Icon_multiply.svg" loading="lazy" alt="" class="close-icon">
                 </div>
             </div>
             <div id="scrollbar" class="flyout-content w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea26c-efe74afb">
@@ -51,7 +51,7 @@
                     </div>
                     <div id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea27d-efe74afb" class="flyout-cards">
                         <div id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea27e-efe74afb" class="step-card">
-                            <div class="step-icon"><img src="images/academic-cap.svg" loading="lazy" alt="">
+                            <div class="step-icon"><img src="img/academic-cap.svg" loading="lazy" alt="">
                             </div>
                             <div class="step-top">
                                 <h3 id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea281-efe74afb">Feature one<br></h3>
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         <div id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea288-efe74afb" class="step-card">
-                            <div class="step-icon"><img src="images/Icon_copy.svg" loading="lazy" alt="">
+                            <div class="step-icon"><img src="img/Icon_copy.svg" loading="lazy" alt="">
                             </div>
                             <div class="step-top">
                                 <h3 id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea28b-efe74afb">Feature two<br></h3>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea292-efe74afb" class="step-card">
-                            <div class="step-icon"><img src="images/Icon_pennant.svg" loading="lazy" alt="">
+                            <div class="step-icon"><img src="img/Icon_pennant.svg" loading="lazy" alt="">
                             </div>
                             <div class="step-top">
                                 <h3 id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea295-efe74afb">Feature three<br></h3>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea29c-efe74afb" class="step-card">
-                            <div class="step-icon"><img src="images/Icon_download.svg" loading="lazy" alt="">
+                            <div class="step-icon"><img src="img/Icon_download.svg" loading="lazy" alt="">
                             </div>
                             <div class="step-top">
                                 <h3 id="w-node-_1a3066cf-38a7-eeb1-e3c6-aa2f3c8ea29f-efe74afb">Feature four<br></h3>
@@ -274,7 +274,7 @@
                     <div class="card-wrapper">
                         <div class="card left-end">
                             <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70cb-efe74afb" class="card-icon-circle"><img
-                                    src="images/Icon_copy.svg" loading="lazy" alt=""></div>
+                                    src="{{ asset('img/Icon_copy.svg') }}" loading="lazy" alt=""></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
                                     <h3>Tipo de proyecto</h3>
@@ -282,12 +282,7 @@
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="#" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">Button</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
+
                                 </div>
                             </div>
                             <div class="hover-card-circle"></div>
@@ -295,7 +290,7 @@
                         <div id="w-node-fdab1888-d2a4-62a4-bda9-3770dfba70d1-efe74afb" class="verticle-line dark"></div>
                         <div data-w-id="495fcc9f-807c-962f-12da-95dde81c306a" class="card top-border---tablet">
                             <div id="w-node-_495fcc9f-807c-962f-12da-95dde81c306b-efe74afb" class="card-icon-circle"><img
-                                    src="images/academic-cap.svg" loading="lazy" alt=""></div>
+                                    src="{{ asset('img/academic-cap.svg') }}" loading="lazy" alt=""></div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
@@ -304,18 +299,13 @@
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="#" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">Button</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="card top-border---tablet">
                             <div id="w-node-ebbe51c5-14ff-3d79-013b-4761fbab3fd9-efe74afb" class="card-icon-circle"><img
-                                    src="images/Icon_mail.svg" loading="lazy" alt=""></div>
+                                    src="{{ asset('img/Icon_mail.svg') }}" loading="lazy" alt=""></div>
                             <div class="hover-card-circle"></div>
                             <div class="card-bottom-info">
                                 <div class="card-description">
@@ -324,12 +314,7 @@
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="#" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">Button</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -347,12 +332,6 @@
                                         elit.</div>
                                 </div>
                                 <div class="card-hover-link">
-                                    <a href="#" class="underline-hover-link dark w-inline-block">
-                                        <div class="subtitle">Button</div>
-                                        <div class="hover-line">
-                                            <div class="hover-line-fill"></div>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -372,139 +351,103 @@
                         <div class="testimonial-strip-wrapper tilted">
                             <div class="testimonial-background large">
                                 <div class="testimonial-image-strip one">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip two">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip three">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip four">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                             </div>
                             <div class="testimonial-background large">
                                 <div class="testimonial-image-strip one">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip two">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip three">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip four">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                             </div>
                             <div class="testimonial-background large">
                                 <div class="testimonial-image-strip one">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip two">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip three">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                                 <div class="testimonial-image-strip four">
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
-                                    <div class="looping-screen small"><img src="images/Rythm-comp.jpg" loading="lazy"
-                                            srcset="images/Rythm-comp-p-500.jpeg 500w, images/Rythm-comp.jpg 695w"
+                                    <div class="looping-screen small"><img src="img/circlee.jpg" loading="lazy"
                                             sizes="100vw" alt="" class="looping-image"></div>
                                 </div>
                             </div>
@@ -669,7 +612,7 @@
                                 </div>
                             </div>
                             <div id="w-node-_2e0b3d72-7620-ad56-01e1-60b8191d7bc1-191d7b7c" class="circle-link-text left">
-                                <img src="images/chevron-left24x242x.svg" loading="lazy"
+                                <img src="img/chevron-left24x242x.svg" loading="lazy"
                                     id="w-node-_2e0b3d72-7620-ad56-01e1-60b8191d7bc2-191d7b7c" alt=""
                                     class="arrow">
                                 <div id="w-node-_2e0b3d72-7620-ad56-01e1-60b8191d7bc3-191d7b7c" class="slider-link-text">
@@ -699,7 +642,7 @@
                                 </div>
                             </div>
                             <div id="w-node-_2e0b3d72-7620-ad56-01e1-60b8191d7bd3-191d7b7c" class="circle-link-text">
-                                <div class="slider-link-text">Next</div><img src="images/chevron-right24x242x.svg"
+                                <div class="slider-link-text">Next</div><img src="img/chevron-right24x242x.svg"
                                     loading="lazy" id="w-node-_2e0b3d72-7620-ad56-01e1-60b8191d7bd6-191d7b7c"
                                     alt="" class="arrow">
                             </div>
@@ -811,101 +754,7 @@
         <div class="section-cover"></div>
     </div>
      --}}
-    <div class="section grey no-padding cut wf-section">
-        <div class="grid-wrapper">
-            <div id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b25-efe74afb" class="section-box no-top-margin">
-                <div class="stacked-content">
-                    <div class="dual-grid">
-                        <div class="stacked-heading">
-                            <div class="left-intro">
-                                <div id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b29-efe74afb"
-                                    class="subtitle-line dark left">
-                                    <div class="solid-subtitle-line dark"></div>
-                                </div>
-                                <div id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b2b-efe74afb" class="subtitle">
-                                    Proyectos</div>
-                            </div>
-                            <div class="left-intro verticle">
-                                <h1 id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b2e-efe74afb">Últimos públicados</h1>
-                            </div>
-                        </div>
-                        <div id="w-node-_962ec2be-c7a4-bf74-cdde-6aef89722b30-efe74afb" class="right-dual">
-                            <a href="" id="w-node-_153a900d-5d27-4c6f-76d2-750f6833200d-efe74afb"
-                                class="outline-button w-inline-block">
-                                <div id="w-node-_153a900d-5d27-4c6f-76d2-750f6833200e-efe74afb" class="button-text">
-                                    Ver todos los proyectos</div>
-                                <div id="w-node-_153a900d-5d27-4c6f-76d2-750f68332010-efe74afb"
-                                    class="button-hover-outline left">
-                                    <div class="solid-button-outline"></div>
-                                </div>
-                                <div id="w-node-_153a900d-5d27-4c6f-76d2-750f68332012-efe74afb"
-                                    class="button-hover-outline right">
-                                    <div class="solid-button-outline right"></div>
-                                </div>
-                                <div id="w-node-_153a900d-5d27-4c6f-76d2-750f68332014-efe74afb"
-                                    class="button-hover-outline middle">
-                                    <div class="solid-button-outline middle"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    @if ($projects->count() == 0)
-                        <h6>no hay</h6>
-                    @else
-                        <div class="template-slider">
-                            <div data-delay="4000" data-animation="slide" class="cards-slider w-slider"
-                                data-autoplay="false" data-easing="ease" data-hide-arrows="false"
-                                data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3"
-                                data-duration="500" data-infinite="true">
-                                <div class="cards-mask medium w-slider-mask">
-                                    @foreach ($projects as $project)
-                                        @include('front.layouts.utilities._project_card')
-                                    @endforeach
-                                </div>
-                                <div class="left-arrow left w-slider-arrow-left">
-                                    <div class="solid-video-button-outline dark">
-                                        <div class="slider-arrow-wrapper"><img
-                                                src="{{ asset('img/arrow-left-final24x242x.svg') }}" loading="lazy"
-                                                alt="" class="invert-small"></div>
-                                        <div class="video-button-outline small">
-                                            <div id="w-node-aec76a51-a872-fb09-b07c-e61591c5c4c0-efe74afb"
-                                                class="video-outline-wrapper top">
-                                                <div class="video-outline small"></div>
-                                            </div>
-                                            <div id="w-node-aec76a51-a872-fb09-b07c-e61591c5c4c2-efe74afb"
-                                                class="video-outline-wrapper bottom">
-                                                <div class="video-outline bottom small"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="left-arrow right w-slider-arrow-right">
-                                    <div class="solid-video-button-outline dark">
-                                        <div class="slider-arrow-wrapper"><img
-                                                src="{{ asset('img/arrow-right-final24x242x.svg') }}" loading="lazy"
-                                                alt="" class="invert-small"></div>
-                                        <div class="video-button-outline small">
-                                            <div id="w-node-_31bdb9ca-fcde-b74c-9876-fe432149d186-efe74afb"
-                                                class="video-outline-wrapper top">
-                                                <div class="video-outline small"></div>
-                                            </div>
-                                            <div id="w-node-_31bdb9ca-fcde-b74c-9876-fe432149d188-efe74afb"
-                                                class="video-outline-wrapper bottom">
-                                                <div class="video-outline bottom small"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hide-slide-nav w-slider-nav w-round"></div>
-                            </div>
-                        </div>
-                    @endif
-                </div>
-            </div>
-            <div class="grey-fill top"></div>
-            <div class="fill"></div>
-        </div>
-    </div>
+    @include('front.layouts.partials._projects_section')
     <div data-w-id="0f65cd45-6575-c063-72d6-f7ff67be0b1e" class="section no-padding clip wf-section">
         <div class="grid-wrapper">
             <div id="w-node-_0f65cd45-6575-c063-72d6-f7ff67be0b20-efe74afb" class="video-box">

@@ -4,11 +4,6 @@
             <div role="listitem" class="w-dyn-item">
                 <div class="schedule-item">
                     <a href="#" class="schedule-top w-inline-block">
-                        <div id="w-node-ac13c773-c417-7102-9010-d65f09de88a5-efe74afb" class="date">
-                            <div class="week-day"></div>
-                            <div class="day-number"></div>
-                        </div>
-                        <div class="verticle-line dark"></div>
                         <div class="schedule-top-content">
                             <div id="w-node-ac13c773-c417-7102-9010-d65f09de88aa-efe74afb" class="schedule-title">
                                 <h3 class="card-title">{{ $project->name }}</h3>

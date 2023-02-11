@@ -30,7 +30,10 @@ class FrontController extends Controller
 
     public function about()
     {
-        return view('front.about');
+        $projects = Project::where('is_active', true)->orderBy('created_at', 'asc')->get()->take(6);
+
+        return view('front.about')
+            ->with('projects', $projects);
     }
 
     public function detail($slug)
@@ -40,6 +43,14 @@ class FrontController extends Controller
 
         return view('front.detail_project')
             ->with('project', $project)
+            ->with('projects', $projects);
+    }
+
+    public function projects()
+    {
+        $projects = Project::where('is_active', true)->orderBy('created_at', 'asc')->get();
+
+        return view('front.projects')
             ->with('projects', $projects);
     }
 
