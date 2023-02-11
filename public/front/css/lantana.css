@@ -874,7 +874,7 @@ p {
 
 .body-display {
   color: #707788;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.65em;
 }
 
@@ -1916,11 +1916,11 @@ p {
 .solid-subtitle-line {
   width: 40%;
   height: 100%;
-  background-color: #fff;
+  background-color: #da1111;
 }
 
 .solid-subtitle-line.dark {
-  background-color: rgba(112, 119, 136, 0.4);
+  background-color: #da1111;
 }
 
 .lottie-animation {
@@ -2112,7 +2112,7 @@ p {
   bottom: auto;
   width: 50%;
   height: 1px;
-  background-color: #fff;
+  background-color: #da1111;
 }
 
 .corner-fill.horizontal {
@@ -2232,7 +2232,7 @@ p {
   bottom: auto;
   width: 100%;
   height: 1px;
-  background-color: #fff;
+  background-color: #da1111;
 }
 
 .plus-line.verticle {
@@ -2826,7 +2826,7 @@ p {
   right: 0%;
   bottom: 0%;
   height: 1px;
-  background-color: #000;
+  background-color: #da1111;
 }
 
 .lessan-tab-content {
@@ -7082,12 +7082,12 @@ p {
   margin: 0px;
   border-style: solid;
   border-width: 1px;
-  border-color: #cbd0dd;
+  border-color: #da1111;
   border-radius: 100px;
 }
 
 .solid-button-outline.light {
-  border-color: #fff;
+  border-color: #da1111;
 }
 
 .solid-button-outline.right {
@@ -7300,7 +7300,7 @@ p {
   height: 100px;
   border-style: solid;
   border-width: 1px;
-  border-color: #fff;
+  border-color: #da1111;
   border-radius: 100%;
 }
 
@@ -7314,7 +7314,7 @@ p {
 .video-outline.small {
   width: 48px;
   height: 48px;
-  border-color: #cbd0dd;
+  border-color: #da1111;
 }
 
 .video-outline.small-nav-circle-outline {
@@ -7329,7 +7329,7 @@ p {
 }
 
 .video-outline.extra-dark {
-  border-color: #cbd0dd;
+  border-color: #da1111;
 }
 
 .video-outline-wrapper {

@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="stacked-intro">
-                <div class="subtitle large">Sections</div>
+                <div class="subtitle large">Páginas</div>
                 <div id="w-node-_50e2a46f-5201-3825-251a-957aa0496640-130983d2" class="footer-list">
                     <a href="{{ route('index') }}" class="footer-list-item w-inline-block">
                         <div>Inicio</div>

@@ -94,7 +94,8 @@
                                     <div class="tool-tip-text bottom">
                                         <div class="tooltip-corner bottom"></div>
                                         <div class="tooltip-info auto-width">
-                                            <div class="body-display extra-small">Compartir</div>
+                                            <div id="change_{{ $post->id }}" class="body-display extra-small">
+                                                Compartir</div>
                                         </div>
                                     </div>
                                 </a>
@@ -176,9 +177,7 @@
         $(document).ready(function() {
             $('#share_{{ $post->id }}').on('click', function() {
 
-                $('#alert_{{ $post->id }}').fadeIn();
-
-                $('#alert_{{ $post->id }}').delay(3000).fadeOut();
+                $('#change_{{ $post->id }}').text('Link copiado');
 
             });
         });
