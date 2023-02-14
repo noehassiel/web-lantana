@@ -2,20 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
-
-use Session;
 use Auth;
+use Session;
 
-use App\Models\StoreConfig;
-use App\Models\Product;
-use App\Models\PaymentMethod;
-use App\Models\ShipmentMethod;
-use App\Models\Category;
-use App\Models\Order;
+use Carbon\Carbon;
+use App\Models\Post;
+
 use App\Models\User;
+use App\Models\Order;
+use App\Models\Banner;
+use App\Models\Product;
+use App\Models\Project;
+use App\Models\Category;
+use App\Models\StoreConfig;
 
 use Illuminate\Http\Request;
+use App\Models\PaymentMethod;
+use App\Models\ShipmentMethod;
 
 class DashboardController extends Controller
 {
@@ -24,7 +27,7 @@ class DashboardController extends Controller
         $this->middleware('auth');
     }
 
-    public function index ()
+    public function index()
     {
         /*
         $product = Product::first();
@@ -78,32 +81,22 @@ class DashboardController extends Controller
 
         */
 
+        $banners = Banner::where('is_active', true)->get();
+        $projects = Project::where('is_active', true)->get();
+        $posts = Post::where('is_publish', 1)->get();
 
-        return view('back.index');
+
+        return view('back.index')
+            ->with('banners', $banners)
+            ->with('projects', $projects)
+            ->with('posts', $posts);
     }
 
-    public function configuration ()
+    public function configuration()
     {
         return view('back.configuration');
     }
 
-    public function shipping ()
-    {
-        return view('back.shipping.index');
-    }
-
-    // Configuration Steps
-    public function configStep1 ()
-    {
-        return view('back.config_steps.step1');
-    }
-
-    public function configStep2 ($id)
-    {
-        $config = StoreConfig::find($id);
-
-        return view('back.config_steps.step2')->with('config', $config);
-    }
 
     public function changeColor()
     {
@@ -113,7 +106,7 @@ class DashboardController extends Controller
 
         if ($user->color_mode == 0) {
             $user->color_mode = 1;
-        }else{
+        } else {
             $user->color_mode = 0;
         }
         $user->save();
@@ -132,7 +125,7 @@ class DashboardController extends Controller
 
         if ($user->color_mode == 0) {
             $user->color_mode = 1;
-        }else{
+        } else {
             $user->color_mode = 0;
         }
         $user->save();
@@ -158,12 +151,12 @@ class DashboardController extends Controller
         $search_query = $request->input('query');
 
         $products = Product::where('name', 'LIKE', "%{$search_query}%")
-        ->where('category_id', '!=', NULL)
-        ->orWhere('description', 'LIKE', "%{$search_query}%")
-        ->orWhere('search_tags', 'LIKE', "%{$search_query}%")
-        ->orWhereHas('category', function ($query) use ($search_query) {
-            $query->where(strtolower('name'), 'LIKE', '%' . strtolower($search_query) . '%');
-        })->paginate(30);
+            ->where('category_id', '!=', NULL)
+            ->orWhere('description', 'LIKE', "%{$search_query}%")
+            ->orWhere('search_tags', 'LIKE', "%{$search_query}%")
+            ->orWhereHas('category', function ($query) use ($search_query) {
+                $query->where(strtolower('name'), 'LIKE', '%' . strtolower($search_query) . '%');
+            })->paginate(30);
 
         return view('back.general_search')->with('products', $products);
     }

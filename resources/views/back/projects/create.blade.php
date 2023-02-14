@@ -69,6 +69,7 @@
 
                             <button type="submit" class="btn btn-link"><span class="fas fa-plus"></span> Agregar
                                 más imágenes</button>
+                            <small class="text-danger">*Agregar primero los datos obligatorios</small>
                         </div>
 
 

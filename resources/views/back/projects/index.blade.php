@@ -57,7 +57,7 @@
                                         </td>
                                         <td style="width: 150px;">
                                             <img style="width: 100%;"
-                                                src="{{ asset('img/banners/' . $project->main_picture) }}"
+                                                src="{{ asset('img/projects/' . $project->main_picture) }}"
                                                 alt="{{ $project->title }}">
                                         </td>
 
@@ -95,7 +95,7 @@
                                                 {{ method_field('DELETE') }}
 
                                                 <button type="submit" class="btn btn-link text-danger px-1 py-0"
-                                                    data-toggle="tooltip" data-original-title="Eliminar Banner">
+                                                    data-toggle="tooltip" data-original-title="Eliminar Proyecto">
                                                     <i class="fas fa-trash" aria-hidden="true"></i>
                                                 </button>
                                             </form>
